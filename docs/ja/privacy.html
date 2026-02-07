@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SlideTouch - プライバシーポリシー</title>
+    <meta name="description" content="SlideTouchプライバシーポリシー。100%オンデバイス処理、ネットワークアクセスなし。">
+
+    <link rel="canonical" href="https://puritysb.github.io/SlideTouch-support/ja/privacy.html">
+    <link rel="alternate" hreflang="en" href="https://puritysb.github.io/SlideTouch-support/privacy.html">
+    <link rel="alternate" hreflang="ko" href="https://puritysb.github.io/SlideTouch-support/ko/privacy.html">
+    <link rel="alternate" hreflang="ja" href="https://puritysb.github.io/SlideTouch-support/ja/privacy.html">
+    <link rel="alternate" hreflang="x-default" href="https://puritysb.github.io/SlideTouch-support/privacy.html">
+
+    <link rel="icon" type="image/png" href="../app-icon.png">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-gradient"></div>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="/SlideTouch-support/ja/" class="logo">SlideTouch</a>
+            <div class="nav-links">
+                <a href="features.html" class="nav-link">機能</a>
+                <a href="releases.html" class="nav-link">リリース</a>
+                <a href="support.html" class="nav-link">サポート</a>
+                <div class="lang-switcher">
+                    <button class="lang-current" aria-label="言語を変更">
+                        <span class="lang-code">JA</span>
+                        <svg class="lang-arrow" viewBox="0 0 12 12" width="12" height="12">
+                            <path d="M3 5l3 3 3-3" stroke="currentColor" fill="none" stroke-width="1.5"/>
+                        </svg>
+                    </button>
+                    <div class="lang-dropdown">
+                        <a href="/" class="lang-option" data-lang="en">English</a>
+                        <a href="/ko/" class="lang-option" data-lang="ko">한국어</a>
+                        <a href="/ja/" class="lang-option" data-lang="ja">日本語</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page">
+        <div class="container">
+            <div class="page-card">
+                <h1>プライバシーポリシー</h1>
+                <p>最終更新日: 2026-02-08</p>
+
+                <h2>概要</h2>
+                <ul>
+                    <li>SlideTouchはすべてを100%デバイス上で処理します。</li>
+                    <li>アプリにはネットワークアクセスがなく、ファイルをどこにもアップロードしません。</li>
+                    <li>広告、トラッキング、分析SDKは含まれていません。</li>
+                </ul>
+
+                <h2>アクセスする情報</h2>
+                <p>SlideTouchは、システムのファイル選択ダイアログまたはドラッグ＆ドロップを通じてユーザーが明示的に開いたファイルのみにアクセスします：</p>
+                <ul>
+                    <li>編集用に選択したPDFファイルおよび画像</li>
+                    <li>保存用に選択した書き出し先フォルダ</li>
+                </ul>
+                <p>SlideTouchは写真ライブラリ、連絡先、カレンダー、その他のシステムデータにはアクセスしません。</p>
+
+                <h2>オンデバイス処理</h2>
+                <p>すべての処理がMac上でローカルに実行されます：</p>
+                <ul>
+                    <li><strong>OCR</strong>: Apple Visionフレームワーク（VNRecognizeTextRequest）</li>
+                    <li><strong>インペインティング</strong>: Neural Engineで動作するLaMa FP16 Core MLモデル</li>
+                    <li><strong>セグメンテーション</strong>: Neural Engineで動作するSAM2 Tiny Core MLモデル</li>
+                    <li><strong>レンダリング</strong>: Core GraphicsおよびCore Image</li>
+                </ul>
+                <p>クラウドAPIなし、リモート推論なし、いかなる種類のサーバー通信もありません。</p>
+
+                <h2>ネットワークアクセス</h2>
+                <p>SlideTouchには<strong>ネットワーク権限がありません</strong>。アプリはサンドボックス化されており、物理的にネットワークリクエストを送信できません。ドキュメントは完全にマシン上に留まります。</p>
+
+                <h2>MLモデル</h2>
+                <p>機械学習モデル（LaMa、SAM2）はインストール時にアプリにバンドルされます。インターネットからダウンロードされることはありません。モデルの推論はすべてMacのNeural Engineで実行されます。</p>
+
+                <h2>データ保存</h2>
+                <p>SlideTouchはアプリの設定と最近のファイル参照のみをサンドボックスコンテナに保存します。書き出し機能を通じて明示的に保存するもの以外は、ユーザーコンテンツがキャッシュまたは保存されることはありません。</p>
+
+                <h2>データ削除</h2>
+                <p>SlideTouchを削除すると、すべてのアプリデータが一緒に削除されます。元のPDFファイルはSlideTouchによって変更されることなく、保存した場所にそのまま残ります。</p>
+
+                <h2>お問い合わせ</h2>
+                <p>このプライバシーポリシーに関するご質問は、<a href="support.html">サポート</a>ページをご覧いただくか、<a href="https://github.com/puritysb/SlideTouch-support/issues" target="_blank" rel="noopener noreferrer">GitHub</a>にイシューを登録してください。</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">SlideTouch</div>
+                <p>&copy; 2026 SlideTouch. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="features.html">機能</a>
+                    <a href="releases.html">リリース</a>
+                    <a href="support.html">サポート</a>
+                    <a href="privacy.html">プライバシーポリシー</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../lang-switcher.js"></script>
+</body>
+
+</html>

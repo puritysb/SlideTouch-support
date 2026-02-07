@@ -2,7 +2,7 @@
 (function() {
     'use strict';
 
-    const SUPPORTED_LANGS = ['en', 'ko'];
+    const SUPPORTED_LANGS = ['en', 'ko', 'ja'];
     const DEFAULT_LANG = 'en';
     const PAGES = ['', 'features.html', 'support.html', 'privacy.html', 'releases.html'];
 

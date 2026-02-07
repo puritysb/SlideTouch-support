@@ -8,13 +8,13 @@
 
 ## Links
 
-| | English | 한국어 |
-|---|---|---|
-| Home | [Landing Page](https://puritysb.github.io/SlideTouch-support/) | [랜딩 페이지](https://puritysb.github.io/SlideTouch-support/ko/) |
-| Features | [Features](https://puritysb.github.io/SlideTouch-support/features.html) | [기능](https://puritysb.github.io/SlideTouch-support/ko/features.html) |
-| Support | [Support & FAQ](https://puritysb.github.io/SlideTouch-support/support.html) | [지원 & FAQ](https://puritysb.github.io/SlideTouch-support/ko/support.html) |
-| Privacy | [Privacy Policy](https://puritysb.github.io/SlideTouch-support/privacy.html) | [개인정보처리방침](https://puritysb.github.io/SlideTouch-support/ko/privacy.html) |
-| Releases | [Release Notes](https://puritysb.github.io/SlideTouch-support/releases.html) | [릴리즈 노트](https://puritysb.github.io/SlideTouch-support/ko/releases.html) |
+| | English | 한국어 | 日本語 |
+|---|---|---|---|
+| Home | [Landing Page](https://puritysb.github.io/SlideTouch-support/) | [랜딩 페이지](https://puritysb.github.io/SlideTouch-support/ko/) | [ランディング](https://puritysb.github.io/SlideTouch-support/ja/) |
+| Features | [Features](https://puritysb.github.io/SlideTouch-support/features.html) | [기능](https://puritysb.github.io/SlideTouch-support/ko/features.html) | [機能](https://puritysb.github.io/SlideTouch-support/ja/features.html) |
+| Support | [Support & FAQ](https://puritysb.github.io/SlideTouch-support/support.html) | [지원 & FAQ](https://puritysb.github.io/SlideTouch-support/ko/support.html) | [サポート](https://puritysb.github.io/SlideTouch-support/ja/support.html) |
+| Privacy | [Privacy Policy](https://puritysb.github.io/SlideTouch-support/privacy.html) | [개인정보처리방침](https://puritysb.github.io/SlideTouch-support/ko/privacy.html) | [プライバシー](https://puritysb.github.io/SlideTouch-support/ja/privacy.html) |
+| Releases | [Release Notes](https://puritysb.github.io/SlideTouch-support/releases.html) | [릴리즈 노트](https://puritysb.github.io/SlideTouch-support/ko/releases.html) | [リリース](https://puritysb.github.io/SlideTouch-support/ja/releases.html) |
 
 ---
 

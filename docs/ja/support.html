@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SlideTouch - サポート</title>
+    <meta name="description" content="SlideTouchサポート、FAQ、バグ報告ガイド。">
+
+    <link rel="canonical" href="https://puritysb.github.io/SlideTouch-support/ja/support.html">
+    <link rel="alternate" hreflang="en" href="https://puritysb.github.io/SlideTouch-support/support.html">
+    <link rel="alternate" hreflang="ko" href="https://puritysb.github.io/SlideTouch-support/ko/support.html">
+    <link rel="alternate" hreflang="ja" href="https://puritysb.github.io/SlideTouch-support/ja/support.html">
+    <link rel="alternate" hreflang="x-default" href="https://puritysb.github.io/SlideTouch-support/support.html">
+
+    <link rel="icon" type="image/png" href="../app-icon.png">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-gradient"></div>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="/SlideTouch-support/ja/" class="logo">SlideTouch</a>
+            <div class="nav-links">
+                <a href="features.html" class="nav-link">機能</a>
+                <a href="releases.html" class="nav-link">リリース</a>
+                <a href="support.html" class="nav-link">サポート</a>
+                <div class="lang-switcher">
+                    <button class="lang-current" aria-label="言語を変更">
+                        <span class="lang-code">JA</span>
+                        <svg class="lang-arrow" viewBox="0 0 12 12" width="12" height="12">
+                            <path d="M3 5l3 3 3-3" stroke="currentColor" fill="none" stroke-width="1.5"/>
+                        </svg>
+                    </button>
+                    <div class="lang-dropdown">
+                        <a href="/" class="lang-option" data-lang="en">English</a>
+                        <a href="/ko/" class="lang-option" data-lang="ko">한국어</a>
+                        <a href="/ja/" class="lang-option" data-lang="ja">日本語</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page">
+        <div class="container">
+            <div class="page-card">
+                <h1>サポート</h1>
+                <p>SlideTouchの使用中に問題がある場合は、以下をご確認ください。</p>
+
+                <h2>システム要件</h2>
+                <ul>
+                    <li><strong>macOS 15.1+</strong>（Sequoia以降）</li>
+                    <li><strong>Apple Silicon</strong>（M1、M2、M3、M4）— Intel Macは非対応</li>
+                    <li><strong>8GB+ RAM</strong> 推奨</li>
+                </ul>
+
+                <h2>よくある質問</h2>
+                <div class="faq-list">
+                    <details class="faq-item">
+                        <summary>なぜApple Siliconが必要ですか？</summary>
+                        <p>SlideTouchはApple SiliconチップのNeural Engineに依存するCore MLモデルを使用しています。Intel Macにはこのハードウェアがなく、CPUのみでの推論は実用的な速度になりません。</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>通常の（テキストベースの）PDFも編集できますか？</summary>
+                        <p>SlideTouchは、テキストが編集可能なオブジェクトではなくピクセルとして存在する画像ベースのPDF向けに設計されています。テキストベースのPDFには、標準的なPDFエディタがより適しています。</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>元のPDFは変更されますか？</summary>
+                        <p>決して変更されません。SlideTouchは厳格な非破壊編集の原則に従います。すべての編集はオーバーレイレイヤーとして保存されます。書き出し時に新しいファイルが作成され、元のファイルはそのまま維持されます。</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>OCRはどの言語に対応していますか？</summary>
+                        <p>現在、英語、韓国語、日本語に対応しています。言語サポートはApple Visionフレームワークの認識機能に依存します。</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>インターネット接続は必要ですか？</summary>
+                        <p>いいえ。すべての処理はデバイス上で完全に行われます。SlideTouchにはネットワーク機能がなく、ファイルをどこにもアップロードしません。</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>インペインティングの結果がぼやけたりアーティファクトがあります</summary>
+                        <p>より小さな編集領域を使用してみてください。インペインティングモデルは小〜中サイズのパッチで最も効果的に動作します。非常に大きな領域は、複数の小さなステップに分けて編集することをお勧めします。</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>アプリのメモリ使用量が多いです</summary>
+                        <p>SlideTouchはMLモデルを必要に応じてロードし、30秒間使用しないとアンロードします。非常に大きなPDF（100ページ以上）の場合、積極的に編集していないページを閉じるとメモリ使用量が減少します。</p>
+                    </details>
+                </div>
+
+                <h2>バグ報告</h2>
+                <p>バグを報告する最も簡単な方法はGitHub Issuesです。</p>
+                <ul>
+                    <li>Issues: <a href="https://github.com/puritysb/SlideTouch-support/issues" target="_blank" rel="noopener noreferrer">github.com/puritysb/SlideTouch-support/issues</a></li>
+                </ul>
+
+                <h2>バグ報告に含める内容</h2>
+                <ul>
+                    <li>アプリのバージョン（SlideTouch &gt; SlideTouchについて）</li>
+                    <li>macOSバージョンとチップモデル（例：macOS 15.2、M2 Pro）</li>
+                    <li>使用していた機能（OCR、インペインティング、書き出しなど）</li>
+                    <li>問題の再現手順</li>
+                    <li>可能であればスクリーンショット</li>
+                </ul>
+
+                <h2>プライバシー</h2>
+                <p>SlideTouchはすべてをデバイス上で処理し、ネットワークアクセスがありません。詳細は<a href="privacy.html">プライバシーポリシー</a>をご覧ください。</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">SlideTouch</div>
+                <p>&copy; 2026 SlideTouch. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="features.html">機能</a>
+                    <a href="releases.html">リリース</a>
+                    <a href="support.html">サポート</a>
+                    <a href="privacy.html">プライバシーポリシー</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../lang-switcher.js"></script>
+</body>
+
+</html>
