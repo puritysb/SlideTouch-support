@@ -33,10 +33,32 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* Japanese word-break - allow natural breaking */
-html[lang="ja"] body {
+/* Japanese word-break
+   keep-all blocks ALL CJK line breaks (Japanese has no spaces between words).
+   Override with normal to let the browser break between any CJK characters.
+   Applied to all descendants via * to ensure no element inherits keep-all. */
+html[lang="ja"] body,
+html[lang="ja"] body * {
     word-break: normal;
-    overflow-wrap: break-word;
+    overflow-wrap: anywhere;
+}
+
+/* Protect Latin-only elements from mid-word breaking */
+html[lang="ja"] .logo,
+html[lang="ja"] .nav-links a,
+html[lang="ja"] .lang-current,
+html[lang="ja"] .lang-option,
+html[lang="ja"] .cta-btn,
+html[lang="ja"] .download-btn,
+html[lang="ja"] .release-version,
+html[lang="ja"] .release-date,
+html[lang="ja"] .footer-logo {
+    overflow-wrap: normal;
+    white-space: nowrap;
+}
+
+html[lang="ja"] .text-group h1 {
+    letter-spacing: 0;
 }
 
 /* Background Gradients */
