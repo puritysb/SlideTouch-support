@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SlideTouch - Release Notes</title>
+    <meta name="description" content="SlideTouch release notes and version history.">
+
+    <link rel="canonical" href="https://puritysb.github.io/SlideTouch-support/releases.html">
+    <link rel="alternate" hreflang="en" href="https://puritysb.github.io/SlideTouch-support/releases.html">
+    <link rel="alternate" hreflang="ko" href="https://puritysb.github.io/SlideTouch-support/ko/releases.html">
+    <link rel="alternate" hreflang="x-default" href="https://puritysb.github.io/SlideTouch-support/releases.html">
+
+    <link rel="icon" type="image/png" href="app-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-gradient"></div>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="/SlideTouch-support/" class="logo">SlideTouch</a>
+            <div class="nav-links">
+                <a href="features.html" class="nav-link">Features</a>
+                <a href="releases.html" class="nav-link">Releases</a>
+                <a href="support.html" class="nav-link">Support</a>
+                <div class="lang-switcher">
+                    <button class="lang-current" aria-label="Change language">
+                        <span class="lang-code">EN</span>
+                        <svg class="lang-arrow" viewBox="0 0 12 12" width="12" height="12">
+                            <path d="M3 5l3 3 3-3" stroke="currentColor" fill="none" stroke-width="1.5"/>
+                        </svg>
+                    </button>
+                    <div class="lang-dropdown">
+                        <a href="/" class="lang-option" data-lang="en">English</a>
+                        <a href="/ko/" class="lang-option" data-lang="ko">한국어</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="releases">
+        <div class="container">
+            <div class="section-header">
+                <h1>Release Notes</h1>
+                <p>Version history and changelog</p>
+            </div>
+
+            <article class="release-entry">
+                <div class="release-header">
+                    <span class="release-version">v1.0</span>
+                    <span class="release-date">2026</span>
+                </div>
+
+                <h3>Core Features</h3>
+                <ul>
+                    <li>PDF loading and full-resolution page rendering</li>
+                    <li>On-device OCR with Apple Vision (English, Korean, Japanese)</li>
+                    <li>AI inpainting with LaMa model for background restoration</li>
+                    <li>Non-destructive layer-based editing with unlimited undo/redo</li>
+                    <li>Inline text editing with rich text support (fonts, sizes, colors, alignment)</li>
+                </ul>
+
+                <h3>Object Editing</h3>
+                <ul>
+                    <li>Object selection and removal with SAM2 segmentation</li>
+                    <li>Stroke-based mask generation for precise object isolation</li>
+                    <li>Object move with automatic inpainting of the source area</li>
+                </ul>
+
+                <h3>Shape Drawing</h3>
+                <ul>
+                    <li>Rectangle, ellipse, arrow, and freeform curve tools</li>
+                    <li>Customizable stroke color, fill color, and line width</li>
+                </ul>
+
+                <h3>Export</h3>
+                <ul>
+                    <li>PDF export with all edits composited</li>
+                    <li>Image export (PNG, JPEG)</li>
+                    <li>Video slideshow export</li>
+                    <li>Animated GIF export</li>
+                </ul>
+
+                <h3>Localization</h3>
+                <ul>
+                    <li>English, Korean, and Japanese interface</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">SlideTouch</div>
+                <p>&copy; 2026 SlideTouch. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="features.html">Features</a>
+                    <a href="releases.html">Releases</a>
+                    <a href="support.html">Support</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="lang-switcher.js"></script>
+</body>
+
+</html>

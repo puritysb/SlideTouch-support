@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SlideTouch - Support</title>
+    <meta name="description" content="SlideTouch support, FAQ, and bug reporting guide.">
+
+    <link rel="canonical" href="https://puritysb.github.io/SlideTouch-support/support.html">
+    <link rel="alternate" hreflang="en" href="https://puritysb.github.io/SlideTouch-support/support.html">
+    <link rel="alternate" hreflang="ko" href="https://puritysb.github.io/SlideTouch-support/ko/support.html">
+    <link rel="alternate" hreflang="x-default" href="https://puritysb.github.io/SlideTouch-support/support.html">
+
+    <link rel="icon" type="image/png" href="app-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-gradient"></div>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="/SlideTouch-support/" class="logo">SlideTouch</a>
+            <div class="nav-links">
+                <a href="features.html" class="nav-link">Features</a>
+                <a href="releases.html" class="nav-link">Releases</a>
+                <a href="support.html" class="nav-link">Support</a>
+                <div class="lang-switcher">
+                    <button class="lang-current" aria-label="Change language">
+                        <span class="lang-code">EN</span>
+                        <svg class="lang-arrow" viewBox="0 0 12 12" width="12" height="12">
+                            <path d="M3 5l3 3 3-3" stroke="currentColor" fill="none" stroke-width="1.5"/>
+                        </svg>
+                    </button>
+                    <div class="lang-dropdown">
+                        <a href="/" class="lang-option" data-lang="en">English</a>
+                        <a href="/ko/" class="lang-option" data-lang="ko">한국어</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page">
+        <div class="container">
+            <div class="page-card">
+                <h1>Support</h1>
+                <p>If you're experiencing issues with SlideTouch, please check below.</p>
+
+                <h2>System Requirements</h2>
+                <ul>
+                    <li><strong>macOS 15.1+</strong> (Sequoia or later)</li>
+                    <li><strong>Apple Silicon</strong> (M1, M2, M3, M4) — Intel Macs are not supported</li>
+                    <li><strong>8GB+ RAM</strong> recommended</li>
+                </ul>
+
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-list">
+                    <details class="faq-item">
+                        <summary>Why does SlideTouch require Apple Silicon?</summary>
+                        <p>SlideTouch uses Core ML models that rely on the Neural Engine found in Apple Silicon chips. Intel Macs don't have this hardware, and CPU-only inference would be impractically slow.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Can I edit regular (text-based) PDFs?</summary>
+                        <p>SlideTouch is designed specifically for image-based PDFs where text exists as pixels, not as editable text objects. For text-based PDFs, standard PDF editors are more appropriate.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Will my original PDF be modified?</summary>
+                        <p>Never. SlideTouch follows a strict non-destructive editing principle. All edits are stored as overlay layers. When you export, a new file is created, leaving the original untouched.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>What languages does OCR support?</summary>
+                        <p>Currently English, Korean, and Japanese. Language support depends on the Apple Vision framework's recognition capabilities.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Is an internet connection required?</summary>
+                        <p>No. All processing is done entirely on your device. SlideTouch has no network capability and never uploads your files anywhere.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Inpainting looks blurry or has artifacts</summary>
+                        <p>Try using a smaller edit region. The inpainting model works best on small to medium patches. For very large areas, you may need to edit in multiple smaller steps.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>The app is using a lot of memory</summary>
+                        <p>SlideTouch loads ML models on demand and unloads them after 30 seconds of inactivity. For very large PDFs (100+ pages), closing pages you're not actively editing will reduce memory usage.</p>
+                    </details>
+                </div>
+
+                <h2>Report a Bug</h2>
+                <p>The easiest way to report bugs is through GitHub Issues.</p>
+                <ul>
+                    <li>Issues: <a href="https://github.com/puritysb/SlideTouch-support/issues" target="_blank" rel="noopener noreferrer">github.com/puritysb/SlideTouch-support/issues</a></li>
+                </ul>
+
+                <h2>What to Include in Bug Reports</h2>
+                <ul>
+                    <li>App version (SlideTouch &gt; About SlideTouch)</li>
+                    <li>macOS version and chip model (e.g., macOS 15.2, M2 Pro)</li>
+                    <li>Which feature was being used (OCR, inpainting, export, etc.)</li>
+                    <li>Steps to reproduce the issue</li>
+                    <li>Screenshots if possible</li>
+                </ul>
+
+                <h2>Privacy</h2>
+                <p>SlideTouch processes everything on your device and has no network access. For details, see our <a href="privacy.html">Privacy Policy</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">SlideTouch</div>
+                <p>&copy; 2026 SlideTouch. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="features.html">Features</a>
+                    <a href="releases.html">Releases</a>
+                    <a href="support.html">Support</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="lang-switcher.js"></script>
+</body>
+
+</html>

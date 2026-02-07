@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SlideTouch - Edit Image Slides, Pixel by Pixel</title>
+
+    <!-- SEO & Open Graph -->
+    <meta name="description" content="A macOS-native app for pixel-level editing of image-based PDF slides. On-device OCR, inpainting, and text rendering.">
+    <meta property="og:title" content="SlideTouch">
+    <meta property="og:description" content="Edit image-based PDF slides pixel by pixel. On-device OCR + Inpainting + Text rendering.">
+    <meta property="og:image" content="https://puritysb.github.io/SlideTouch-support/og-image.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://puritysb.github.io/SlideTouch-support/">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="ko_KR">
+
+    <!-- Canonical & hreflang -->
+    <link rel="canonical" href="https://puritysb.github.io/SlideTouch-support/">
+    <link rel="alternate" hreflang="en" href="https://puritysb.github.io/SlideTouch-support/">
+    <link rel="alternate" hreflang="ko" href="https://puritysb.github.io/SlideTouch-support/ko/">
+    <link rel="alternate" hreflang="x-default" href="https://puritysb.github.io/SlideTouch-support/">
+
+    <link rel="icon" type="image/png" href="app-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-gradient"></div>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="/SlideTouch-support/" class="logo">SlideTouch</a>
+            <div class="nav-links">
+                <a href="features.html" class="nav-link">Features</a>
+                <a href="releases.html" class="nav-link">Releases</a>
+                <a href="support.html" class="nav-link">Support</a>
+                <!-- Language Switcher -->
+                <div class="lang-switcher">
+                    <button class="lang-current" aria-label="Change language">
+                        <span class="lang-code">EN</span>
+                        <svg class="lang-arrow" viewBox="0 0 12 12" width="12" height="12">
+                            <path d="M3 5l3 3 3-3" stroke="currentColor" fill="none" stroke-width="1.5"/>
+                        </svg>
+                    </button>
+                    <div class="lang-dropdown">
+                        <a href="/" class="lang-option" data-lang="en">English</a>
+                        <a href="/ko/" class="lang-option" data-lang="ko">한국어</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="container hero-content">
+            <div class="text-group">
+                <span class="badge">macOS Native</span>
+                <h1>Edit Image Slides,<br>Pixel by Pixel</h1>
+                <p class="subtitle">
+                    Fix typos in image-based PDF slides without regenerating the entire deck.<br>
+                    On-device OCR + Inpainting + Text rendering.
+                </p>
+                <div class="cta-group" id="download">
+                    <a href="features.html" class="cta-btn">Explore Features</a>
+                    <a href="releases.html" class="cta-btn outline">Release Notes</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="macos-mockup">
+                    <div class="macos-titlebar">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="title">SlideTouch</span>
+                    </div>
+                    <div class="macos-screen">
+                        <div class="placeholder-content">
+                            <div class="icon">🖼</div>
+                            <span>Screenshot coming soon</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Problem / Solution -->
+    <section class="problem-solution">
+        <div class="container">
+            <div class="section-header">
+                <h2>The Problem We Solve</h2>
+            </div>
+            <div class="ps-grid">
+                <div class="ps-card problem">
+                    <div class="icon">😤</div>
+                    <h3>Image-Based Slides Are Uneditable</h3>
+                    <p>Slides from NotebookLM, Canva, and similar tools look beautiful but are entirely flattened images. To fix a single typo, you have to regenerate the whole deck.</p>
+                </div>
+                <div class="ps-card solution">
+                    <div class="icon">✨</div>
+                    <h3>SlideTouch Makes Them Editable</h3>
+                    <p>Using on-device OCR to detect text, AI inpainting to erase it cleanly, and precise rendering to place new text, SlideTouch lets you edit any pixel in a slide.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features Grid -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Key Features</h2>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="icon">🔍</div>
+                    <h3>On-Device OCR</h3>
+                    <p>Apple Vision framework detects text in image slides with bounding boxes for precise editing.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🎨</div>
+                    <h3>AI Inpainting</h3>
+                    <p>LaMa-powered background restoration erases text cleanly, even on complex gradients and patterns.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">📐</div>
+                    <h3>Non-Destructive Layers</h3>
+                    <p>Original images are immutable. All edits exist as overlay layers with unlimited undo/redo.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🔷</div>
+                    <h3>Shape Drawing</h3>
+                    <p>Add rectangles, ellipses, arrows, and freeform curves with customizable stroke and fill.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">✏️</div>
+                    <h3>Rich Text Editing</h3>
+                    <p>Edit text with custom fonts, sizes, colors, and alignment. Style individual runs independently.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">📤</div>
+                    <h3>Flexible Export</h3>
+                    <p>Export edited slides as PDF, PNG, JPEG, video slideshow, or animated GIF.</p>
+                </div>
+            </div>
+            <div class="privacy-notice">
+                <span class="privacy-icon">🔒</span>
+                <span>100% on-device processing. Your files never leave your Mac.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+            </div>
+            <div class="flow-grid">
+                <div class="flow-card">
+                    <div class="flow-number">1</div>
+                    <h3>Open PDF</h3>
+                    <p>Drop your image-based PDF into SlideTouch. Pages are rendered at full resolution.</p>
+                </div>
+                <div class="flow-card">
+                    <div class="flow-number">2</div>
+                    <h3>Edit</h3>
+                    <p>Click any text to edit it. The original is inpainted away and your new text is rendered in place.</p>
+                </div>
+                <div class="flow-card">
+                    <div class="flow-number">3</div>
+                    <h3>Export</h3>
+                    <p>Save as a new PDF, image, or video. The original file is never modified.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- System Requirements -->
+    <section class="system-req">
+        <div class="container">
+            <div class="section-header">
+                <h2>System Requirements</h2>
+            </div>
+            <div class="req-grid">
+                <div class="req-item">
+                    <div class="icon">💻</div>
+                    <h3>macOS 15.1+</h3>
+                    <p>Sequoia or later</p>
+                </div>
+                <div class="req-item">
+                    <div class="icon">⚡</div>
+                    <h3>Apple Silicon</h3>
+                    <p>M1 or later required</p>
+                </div>
+                <div class="req-item">
+                    <div class="icon">🧠</div>
+                    <h3>8GB+ RAM</h3>
+                    <p>Recommended for ML inference</p>
+                </div>
+                <div class="req-item">
+                    <div class="icon">💾</div>
+                    <h3>~500MB</h3>
+                    <p>For app + ML models</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">SlideTouch</div>
+                <p>&copy; 2026 SlideTouch. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="features.html">Features</a>
+                    <a href="releases.html">Releases</a>
+                    <a href="support.html">Support</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="lang-switcher.js"></script>
+    <script>
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        });
+        document.querySelectorAll('.feature-card').forEach(function(el) { observer.observe(el); });
+    </script>
+</body>
+
+</html>

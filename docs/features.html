@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SlideTouch - Features</title>
+    <meta name="description" content="Explore SlideTouch features: OCR, AI inpainting, non-destructive editing, shape drawing, rich text, and more.">
+
+    <link rel="canonical" href="https://puritysb.github.io/SlideTouch-support/features.html">
+    <link rel="alternate" hreflang="en" href="https://puritysb.github.io/SlideTouch-support/features.html">
+    <link rel="alternate" hreflang="ko" href="https://puritysb.github.io/SlideTouch-support/ko/features.html">
+    <link rel="alternate" hreflang="x-default" href="https://puritysb.github.io/SlideTouch-support/features.html">
+
+    <link rel="icon" type="image/png" href="app-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-gradient"></div>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="/SlideTouch-support/" class="logo">SlideTouch</a>
+            <div class="nav-links">
+                <a href="features.html" class="nav-link">Features</a>
+                <a href="releases.html" class="nav-link">Releases</a>
+                <a href="support.html" class="nav-link">Support</a>
+                <div class="lang-switcher">
+                    <button class="lang-current" aria-label="Change language">
+                        <span class="lang-code">EN</span>
+                        <svg class="lang-arrow" viewBox="0 0 12 12" width="12" height="12">
+                            <path d="M3 5l3 3 3-3" stroke="currentColor" fill="none" stroke-width="1.5"/>
+                        </svg>
+                    </button>
+                    <div class="lang-dropdown">
+                        <a href="/" class="lang-option" data-lang="en">English</a>
+                        <a href="/ko/" class="lang-option" data-lang="ko">한국어</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="features-detail">
+        <div class="container">
+            <div class="section-header">
+                <h1>Features</h1>
+                <p>Everything you need to edit image-based slides</p>
+            </div>
+
+            <!-- Feature 1: OCR -->
+            <div class="feature-detail-item">
+                <div class="feature-detail-text">
+                    <span class="feature-number">01</span>
+                    <h2>On-Device OCR</h2>
+                    <p>SlideTouch uses Apple's Vision framework to detect and recognize text in image-based slides. Text regions are identified with precise bounding boxes, and you can click any detected text to start editing. Supports English, Korean, and Japanese.</p>
+                </div>
+                <div class="feature-detail-visual">Screenshot coming soon</div>
+            </div>
+
+            <!-- Feature 2: Inpainting -->
+            <div class="feature-detail-item">
+                <div class="feature-detail-text">
+                    <span class="feature-number">02</span>
+                    <h2>AI-Powered Inpainting</h2>
+                    <p>When you edit text, the original characters need to be erased first. SlideTouch uses the LaMa inpainting model running entirely on your Mac's Neural Engine to restore the background behind removed text. Works on gradients, patterns, and photographs.</p>
+                </div>
+                <div class="feature-detail-visual">Screenshot coming soon</div>
+            </div>
+
+            <!-- Feature 3: Non-Destructive -->
+            <div class="feature-detail-item">
+                <div class="feature-detail-text">
+                    <span class="feature-number">03</span>
+                    <h2>Non-Destructive Layer Editing</h2>
+                    <p>Every edit in SlideTouch is a layer on top of the original image. Nothing is permanently changed until you export. You can toggle, reorder, or delete any edit layer at any time, with full undo/redo support.</p>
+                </div>
+                <div class="feature-detail-visual">Screenshot coming soon</div>
+            </div>
+
+            <!-- Feature 4: Object Selection & Removal -->
+            <div class="feature-detail-item">
+                <div class="feature-detail-text">
+                    <span class="feature-number">04</span>
+                    <h2>Object Selection & Removal</h2>
+                    <p>Select and remove objects from slides using SAM2 segmentation. Draw a stroke over any element, and the AI generates a precise mask. The object is removed and the background is seamlessly restored.</p>
+                </div>
+                <div class="feature-detail-visual">Screenshot coming soon</div>
+            </div>
+
+            <!-- Feature 5: Shape Drawing -->
+            <div class="feature-detail-item">
+                <div class="feature-detail-text">
+                    <span class="feature-number">05</span>
+                    <h2>Shape Drawing</h2>
+                    <p>Add annotations with rectangles, ellipses, arrows, and freeform curves. Customize stroke color, fill color, and line width. Perfect for highlighting important areas or adding visual emphasis.</p>
+                </div>
+                <div class="feature-detail-visual">Screenshot coming soon</div>
+            </div>
+
+            <!-- Feature 6: Rich Text -->
+            <div class="feature-detail-item">
+                <div class="feature-detail-text">
+                    <span class="feature-number">06</span>
+                    <h2>Rich Text Editing</h2>
+                    <p>Full control over typography: choose fonts, adjust sizes, set colors, and align text. Apply different styles to individual text runs within a single text box for maximum flexibility.</p>
+                </div>
+                <div class="feature-detail-visual">Screenshot coming soon</div>
+            </div>
+
+            <!-- Feature 7: Patch-Based Processing -->
+            <div class="feature-detail-item">
+                <div class="feature-detail-text">
+                    <span class="feature-number">07</span>
+                    <h2>Patch-Based Processing</h2>
+                    <p>SlideTouch never sends full 4K+ images through ML models. Instead, it crops to the affected region with context padding, processes just that patch, and composites it back. This preserves quality and dramatically improves performance.</p>
+                </div>
+                <div class="feature-detail-visual">Screenshot coming soon</div>
+            </div>
+
+            <!-- Feature 8: Flexible Export -->
+            <div class="feature-detail-item">
+                <div class="feature-detail-text">
+                    <span class="feature-number">08</span>
+                    <h2>Flexible Export</h2>
+                    <p>Export your edited slides as a new PDF document, individual PNG/JPEG images, a video slideshow, or an animated GIF. The original PDF file is never modified.</p>
+                </div>
+                <div class="feature-detail-visual">Screenshot coming soon</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">SlideTouch</div>
+                <p>&copy; 2026 SlideTouch. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="features.html">Features</a>
+                    <a href="releases.html">Releases</a>
+                    <a href="support.html">Support</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="lang-switcher.js"></script>
+</body>
+
+</html>

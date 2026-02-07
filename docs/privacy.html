@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SlideTouch - Privacy Policy</title>
+    <meta name="description" content="SlideTouch Privacy Policy. 100% on-device processing, no network access.">
+
+    <link rel="canonical" href="https://puritysb.github.io/SlideTouch-support/privacy.html">
+    <link rel="alternate" hreflang="en" href="https://puritysb.github.io/SlideTouch-support/privacy.html">
+    <link rel="alternate" hreflang="ko" href="https://puritysb.github.io/SlideTouch-support/ko/privacy.html">
+    <link rel="alternate" hreflang="x-default" href="https://puritysb.github.io/SlideTouch-support/privacy.html">
+
+    <link rel="icon" type="image/png" href="app-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-gradient"></div>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="/SlideTouch-support/" class="logo">SlideTouch</a>
+            <div class="nav-links">
+                <a href="features.html" class="nav-link">Features</a>
+                <a href="releases.html" class="nav-link">Releases</a>
+                <a href="support.html" class="nav-link">Support</a>
+                <div class="lang-switcher">
+                    <button class="lang-current" aria-label="Change language">
+                        <span class="lang-code">EN</span>
+                        <svg class="lang-arrow" viewBox="0 0 12 12" width="12" height="12">
+                            <path d="M3 5l3 3 3-3" stroke="currentColor" fill="none" stroke-width="1.5"/>
+                        </svg>
+                    </button>
+                    <div class="lang-dropdown">
+                        <a href="/" class="lang-option" data-lang="en">English</a>
+                        <a href="/ko/" class="lang-option" data-lang="ko">한국어</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page">
+        <div class="container">
+            <div class="page-card">
+                <h1>Privacy Policy</h1>
+                <p>Last updated: 2026-02-08</p>
+
+                <h2>Summary</h2>
+                <ul>
+                    <li>SlideTouch processes everything 100% on your device.</li>
+                    <li>The app has no network access and never uploads your files.</li>
+                    <li>No advertising, tracking, or analytics SDKs are included.</li>
+                </ul>
+
+                <h2>Information We Access</h2>
+                <p>SlideTouch accesses only the files you explicitly open through the system file picker or drag-and-drop:</p>
+                <ul>
+                    <li>PDF files and images you choose to edit</li>
+                    <li>Export destination folders you select for saving</li>
+                </ul>
+                <p>SlideTouch does not access your photo library, contacts, calendars, or any other system data.</p>
+
+                <h2>On-Device Processing</h2>
+                <p>All processing runs locally on your Mac:</p>
+                <ul>
+                    <li><strong>OCR</strong>: Apple Vision framework (VNRecognizeTextRequest)</li>
+                    <li><strong>Inpainting</strong>: LaMa FP16 Core ML model on Neural Engine</li>
+                    <li><strong>Segmentation</strong>: SAM2 Tiny Core ML model on Neural Engine</li>
+                    <li><strong>Rendering</strong>: Core Graphics and Core Image</li>
+                </ul>
+                <p>No cloud APIs, no remote inference, no server communication of any kind.</p>
+
+                <h2>Network Access</h2>
+                <p>SlideTouch has <strong>no network entitlements</strong>. The app is sandboxed and physically cannot make network requests. Your documents stay entirely on your machine.</p>
+
+                <h2>ML Models</h2>
+                <p>Machine learning models (LaMa, SAM2) are bundled with the app at install time. They are not downloaded from the internet. Model inference runs entirely on your Mac's Neural Engine.</p>
+
+                <h2>Data Storage</h2>
+                <p>SlideTouch stores only app preferences and recent file references in its sandboxed container. No user content is cached or stored beyond what you explicitly save through the Export function.</p>
+
+                <h2>Data Deletion</h2>
+                <p>When you delete SlideTouch, all app data is removed with it. Original PDF files are never modified by SlideTouch and remain wherever you saved them.</p>
+
+                <h2>Contact</h2>
+                <p>For questions about this privacy policy, see our <a href="support.html">Support</a> page or file an issue on <a href="https://github.com/puritysb/SlideTouch-support/issues" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">SlideTouch</div>
+                <p>&copy; 2026 SlideTouch. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="features.html">Features</a>
+                    <a href="releases.html">Releases</a>
+                    <a href="support.html">Support</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="lang-switcher.js"></script>
+</body>
+
+</html>
