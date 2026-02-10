@@ -67,21 +67,13 @@
                     <a href="releases.html" class="cta-btn outline">リリースノート</a>
                 </div>
             </div>
-            <div class="hero-image">
-                <div class="macos-mockup">
-                    <div class="macos-titlebar">
-                        <span class="dot red"></span>
-                        <span class="dot yellow"></span>
-                        <span class="dot green"></span>
-                        <span class="title">SlideTouch</span>
-                    </div>
-                    <div class="macos-screen">
-                        <div class="placeholder-content">
-                            <div class="icon">🖼</div>
-                            <span>スクリーンショット準備中</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="hero-videos">
+                <video autoplay muted loop playsinline poster="../screenshots/hero-ja.jpg">
+                    <source src="../videos/preview-3-ja.mp4" type="video/mp4">
+                </video>
+                <video autoplay muted loop playsinline>
+                    <source src="../videos/preview-4-ja.mp4" type="video/mp4">
+                </video>
             </div>
         </div>
     </header>
@@ -101,7 +93,7 @@
                 <div class="ps-card solution">
                     <div class="icon">✨</div>
                     <h3>SlideTouchが編集可能にします</h3>
-                    <p>オンデバイスOCRでテキストを検出し、AIインペインティングでクリーンに消去し、精密なレンダリングで新しいテキストを配置します。スライドのどのピクセルでも編集できます。</p>
+                    <p>オンデバイスOCRでテキストを検出し、Neural Engineインペインティングでクリーンに消去し、精密なレンダリングで新しいテキストを配置します。スライドのどのピクセルでも編集できます。</p>
                 </div>
             </div>
         </div>
@@ -116,33 +108,33 @@
             <div class="feature-grid">
                 <div class="feature-card">
                     <div class="icon">🔍</div>
-                    <h3>オンデバイスOCR</h3>
-                    <p>Apple Visionフレームワークが画像スライド内のテキストをバウンディングボックス付きで検出します。</p>
+                    <h3>オンデバイステキスト検出</h3>
+                    <p>Apple Visionフレームワークが画像スライド内のテキストを検出。Mac上で完全に実行されます。</p>
                 </div>
                 <div class="feature-card">
                     <div class="icon">🎨</div>
-                    <h3>AIインペインティング</h3>
-                    <p>LaMaモデルが複雑なグラデーションやパターン上のテキストもクリーンに背景復元します。</p>
+                    <h3>シームレスなテキスト置換</h3>
+                    <p>元のテキストが消去されNeural Engineが背景を復元。新しいテキストがその場にレンダリングされます。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🎯</div>
+                    <h3>オブジェクト選択・移動</h3>
+                    <p>ストロークを描いて要素を選択。移動、再配置、削除が可能。背景はシームレスに補完されます。</p>
                 </div>
                 <div class="feature-card">
                     <div class="icon">📐</div>
-                    <h3>非破壊レイヤー</h3>
-                    <p>元の画像は不変。すべての編集はオーバーレイレイヤーとして存在し、無制限の取り消し/やり直しをサポートします。</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon">🔷</div>
-                    <h3>図形描画</h3>
-                    <p>矩形、楕円、矢印、フリーハンド曲線をカスタムストロークと塗りつぶしで描画できます。</p>
+                    <h3>非破壊編集</h3>
+                    <p>すべての編集はオーバーレイレイヤー。無制限の取り消し/やり直し。書き出すまで変更なし。</p>
                 </div>
                 <div class="feature-card">
                     <div class="icon">✏️</div>
-                    <h3>リッチテキスト編集</h3>
-                    <p>フォント、サイズ、色、配置を自由に調整。個別のテキストランに独立してスタイルを適用します。</p>
+                    <h3>リッチテキスト・図形</h3>
+                    <p>フォント、サイズ、色、配置を完全制御。矩形、楕円、矢印、フリーハンド曲線にも対応。</p>
                 </div>
                 <div class="feature-card">
                     <div class="icon">📤</div>
-                    <h3>柔軟な書き出し</h3>
-                    <p>編集したスライドをPDF、PNG、JPEG、ビデオスライドショー、アニメーションGIFで書き出せます。</p>
+                    <h3>マルチフォーマット書き出し</h3>
+                    <p>PDF、PNG、JPEG、ビデオスライドショー、アニメーションGIFで書き出し。元のファイルは変更されません。</p>
                 </div>
             </div>
             <div class="privacy-notice">

@@ -214,6 +214,22 @@ html[lang="ja"] .text-group h1 {
     font-weight: 300;
 }
 
+/* Hero Videos */
+.hero-videos {
+    width: 100%;
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.hero-videos video {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    display: block;
+}
+
 /* macOS Window Mockup */
 .macos-mockup {
     width: 480px;
@@ -607,6 +623,23 @@ html[lang="ja"] .text-group h1 {
     object-fit: cover;
 }
 
+/* Export 3-image grid */
+.export-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+}
+
+.export-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
 /* Release Notes */
 .releases {
     padding: 120px 0 80px;
@@ -871,6 +904,10 @@ footer {
 
     .subtitle {
         font-size: 1rem;
+    }
+
+    .hero-videos {
+        max-width: 100%;
     }
 
     .macos-mockup {

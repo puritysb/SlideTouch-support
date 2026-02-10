@@ -67,21 +67,13 @@
                     <a href="releases.html" class="cta-btn outline">릴리즈 노트</a>
                 </div>
             </div>
-            <div class="hero-image">
-                <div class="macos-mockup">
-                    <div class="macos-titlebar">
-                        <span class="dot red"></span>
-                        <span class="dot yellow"></span>
-                        <span class="dot green"></span>
-                        <span class="title">SlideTouch</span>
-                    </div>
-                    <div class="macos-screen">
-                        <div class="placeholder-content">
-                            <div class="icon">🖼</div>
-                            <span>스크린샷 준비 중</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="hero-videos">
+                <video autoplay muted loop playsinline poster="../screenshots/hero-ko.jpg">
+                    <source src="../videos/preview-3-ko.mp4" type="video/mp4">
+                </video>
+                <video autoplay muted loop playsinline>
+                    <source src="../videos/preview-4-ko.mp4" type="video/mp4">
+                </video>
             </div>
         </div>
     </header>
@@ -101,7 +93,7 @@
                 <div class="ps-card solution">
                     <div class="icon">✨</div>
                     <h3>SlideTouch가 편집 가능하게 만듭니다</h3>
-                    <p>온디바이스 OCR로 텍스트를 감지하고, AI 인페인팅으로 깔끔하게 지운 뒤, 정밀한 렌더링으로 새 텍스트를 배치합니다. 슬라이드의 어떤 픽셀이든 편집할 수 있습니다.</p>
+                    <p>온디바이스 OCR로 텍스트를 감지하고, Neural Engine 인페인팅으로 깔끔하게 지운 뒤, 정밀한 렌더링으로 새 텍스트를 배치합니다. 슬라이드의 어떤 픽셀이든 편집할 수 있습니다.</p>
                 </div>
             </div>
         </div>
@@ -116,33 +108,33 @@
             <div class="feature-grid">
                 <div class="feature-card">
                     <div class="icon">🔍</div>
-                    <h3>온디바이스 OCR</h3>
-                    <p>Apple Vision 프레임워크가 이미지 슬라이드에서 정확한 바운딩 박스와 함께 텍스트를 감지합니다.</p>
+                    <h3>온디바이스 텍스트 감지</h3>
+                    <p>Apple Vision 프레임워크가 이미지 슬라이드에서 텍스트를 감지합니다. Mac에서 완전히 실행됩니다.</p>
                 </div>
                 <div class="feature-card">
                     <div class="icon">🎨</div>
-                    <h3>AI 인페인팅</h3>
-                    <p>LaMa 모델이 복잡한 그라디언트와 패턴 위의 텍스트도 깔끔하게 배경 복원합니다.</p>
+                    <h3>매끄러운 텍스트 교체</h3>
+                    <p>원본 텍스트가 지워지고 Neural Engine이 배경을 복원한 후, 새 텍스트가 그 자리에 렌더링됩니다.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🎯</div>
+                    <h3>오브젝트 선택 및 이동</h3>
+                    <p>스트로크를 그려 요소를 선택하세요. 이동, 위치 변경, 제거 가능. 배경이 매끄럽게 채워집니다.</p>
                 </div>
                 <div class="feature-card">
                     <div class="icon">📐</div>
-                    <h3>비파괴 레이어</h3>
-                    <p>원본 이미지는 불변. 모든 편집은 오버레이 레이어로 존재하며, 무제한 실행 취소/다시 실행을 지원합니다.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon">🔷</div>
-                    <h3>도형 그리기</h3>
-                    <p>사각형, 타원, 화살표, 자유곡선을 커스텀 스트로크와 채우기로 그릴 수 있습니다.</p>
+                    <h3>비파괴 편집</h3>
+                    <p>모든 편집은 오버레이 레이어. 무제한 실행 취소/다시 실행. 내보내기 전까지 변경 없음.</p>
                 </div>
                 <div class="feature-card">
                     <div class="icon">✏️</div>
-                    <h3>리치 텍스트 편집</h3>
-                    <p>글꼴, 크기, 색상, 정렬을 자유롭게 조절. 개별 텍스트 런에 독립적으로 스타일을 적용합니다.</p>
+                    <h3>리치 텍스트 및 도형</h3>
+                    <p>글꼴, 크기, 색상, 정렬 완벽 제어. 사각형, 타원, 화살표, 자유곡선도 지원합니다.</p>
                 </div>
                 <div class="feature-card">
                     <div class="icon">📤</div>
-                    <h3>유연한 내보내기</h3>
-                    <p>편집된 슬라이드를 PDF, PNG, JPEG, 비디오 슬라이드쇼, 애니메이션 GIF로 내보낼 수 있습니다.</p>
+                    <h3>다중 포맷 내보내기</h3>
+                    <p>PDF, PNG, JPEG, 비디오 슬라이드쇼, 애니메이션 GIF로 내보내기. 원본 파일은 수정되지 않습니다.</p>
                 </div>
             </div>
             <div class="privacy-notice">

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SlideTouch - 기능</title>
-    <meta name="description" content="SlideTouch 기능 상세: OCR, AI 인페인팅, 비파괴 편집, 도형, 리치 텍스트 등.">
+    <meta name="description" content="SlideTouch 기능 상세: 온디바이스 OCR, 배경 복원, 오브젝트 선택, 비파괴 편집, 리치 텍스트, 다중 포맷 내보내기.">
 
     <link rel="canonical" href="https://puritysb.github.io/SlideTouch-support/ko/features.html">
     <link rel="alternate" hreflang="en" href="https://puritysb.github.io/SlideTouch-support/features.html">
@@ -49,79 +49,77 @@
         <div class="container">
             <div class="section-header">
                 <h1>기능</h1>
-                <p>이미지 슬라이드 편집에 필요한 모든 것</p>
+                <p>모든 처리가 Mac에서 실행됩니다. 클라우드 없음. 구독 없음. 추가 비용 없음.</p>
             </div>
 
             <div class="feature-detail-item">
                 <div class="feature-detail-text">
                     <span class="feature-number">01</span>
-                    <h2>온디바이스 OCR</h2>
-                    <p>Apple Vision 프레임워크를 사용해 이미지 슬라이드에서 텍스트를 감지하고 인식합니다. 정확한 바운딩 박스와 함께 텍스트 영역이 식별되며, 감지된 텍스트를 클릭하면 바로 편집을 시작할 수 있습니다. 영어, 한국어, 일본어를 지원합니다.</p>
+                    <h2>온디바이스 텍스트 감지</h2>
+                    <p>Apple Vision 프레임워크를 사용해 이미지 슬라이드에서 텍스트를 감지하고 인식합니다. 정확한 바운딩 박스와 함께 텍스트 영역이 식별되며, 감지된 텍스트를 클릭하면 바로 편집을 시작할 수 있습니다. 모든 처리는 Mac의 Neural Engine에서 로컬로 실행됩니다. 영어, 한국어, 일본어를 지원합니다.</p>
                 </div>
-                <div class="feature-detail-visual">스크린샷 준비 중</div>
+                <div class="feature-detail-visual">
+                    <img src="../screenshots/feature-ocr-ko.jpg" alt="온디바이스 OCR 텍스트 감지" loading="lazy">
+                </div>
             </div>
 
             <div class="feature-detail-item">
                 <div class="feature-detail-text">
                     <span class="feature-number">02</span>
-                    <h2>AI 기반 인페인팅</h2>
-                    <p>텍스트를 편집할 때 원본 글자를 먼저 지워야 합니다. SlideTouch는 Mac의 Neural Engine에서 완전히 실행되는 LaMa 인페인팅 모델을 사용하여 제거된 텍스트 뒤의 배경을 복원합니다. 그라디언트, 패턴, 사진 위에서도 동작합니다.</p>
+                    <h2>매끄러운 텍스트 교체</h2>
+                    <p>텍스트를 편집하면 원본 글자가 지워지고 배경이 자동으로 복원됩니다. LaMa 인페인팅 모델이 Mac의 Neural Engine에서 완전히 실행되어 그라디언트, 패턴, 사진 위의 배경을 채웁니다. 그런 다음 새 텍스트가 정확한 위치에 렌더링됩니다.</p>
                 </div>
-                <div class="feature-detail-visual">스크린샷 준비 중</div>
+                <div class="feature-detail-visual">
+                    <img src="../screenshots/feature-edit-ko.jpg" alt="인라인 텍스트 교체 및 배경 복원" loading="lazy">
+                </div>
             </div>
 
             <div class="feature-detail-item">
                 <div class="feature-detail-text">
                     <span class="feature-number">03</span>
-                    <h2>비파괴 레이어 편집</h2>
-                    <p>SlideTouch의 모든 편집은 원본 이미지 위의 레이어입니다. 내보내기 전까지는 아무것도 영구적으로 변경되지 않습니다. 언제든 편집 레이어를 켜고 끄거나, 순서를 바꾸거나, 삭제할 수 있으며, 완전한 실행 취소/다시 실행을 지원합니다.</p>
+                    <h2>오브젝트 선택 및 이동</h2>
+                    <p>슬라이드의 요소 위에 스트로크를 그리면 온디바이스 세그멘테이션이 정밀한 마스크를 생성합니다. 선택한 오브젝트를 이동하거나, 위치를 변경하거나, 완전히 제거할 수 있습니다. 뒤의 배경은 매끄럽게 복원됩니다.</p>
                 </div>
-                <div class="feature-detail-visual">스크린샷 준비 중</div>
+                <div class="feature-detail-visual">
+                    <img src="../screenshots/feature-select-ko.jpg" alt="정밀 세그멘테이션 마스크로 오브젝트 선택" loading="lazy">
+                </div>
             </div>
 
             <div class="feature-detail-item">
                 <div class="feature-detail-text">
                     <span class="feature-number">04</span>
-                    <h2>오브젝트 선택 및 제거</h2>
-                    <p>SAM2 세그멘테이션을 사용하여 슬라이드에서 오브젝트를 선택하고 제거합니다. 요소 위에 스트로크를 그리면 AI가 정밀한 마스크를 생성합니다. 오브젝트는 제거되고 배경이 매끄럽게 복원됩니다.</p>
+                    <h2>비파괴 편집</h2>
+                    <p>SlideTouch의 모든 편집은 원본 이미지 위의 레이어입니다. 내보내기 전까지는 아무것도 영구적으로 변경되지 않습니다. 언제든 편집 레이어를 켜고 끄거나, 순서를 바꾸거나, 삭제할 수 있으며, 완전한 실행 취소/다시 실행을 지원합니다. 사이드바에서 모든 페이지를 탐색하세요.</p>
                 </div>
-                <div class="feature-detail-visual">스크린샷 준비 중</div>
+                <div class="feature-detail-visual">
+                    <img src="../screenshots/feature-layers-ko.jpg" alt="비파괴 레이어 편집과 페이지 사이드바" loading="lazy">
+                </div>
             </div>
 
             <div class="feature-detail-item">
                 <div class="feature-detail-text">
                     <span class="feature-number">05</span>
-                    <h2>도형 그리기</h2>
-                    <p>사각형, 타원, 화살표, 자유곡선으로 주석을 추가하세요. 스트로크 색상, 채우기 색상, 선 두께를 커스터마이즈할 수 있습니다. 중요한 영역을 강조하거나 시각적 효과를 더하기에 좋습니다.</p>
+                    <h2>리치 텍스트 및 도형</h2>
+                    <p>타이포그래피를 완벽하게 제어합니다. 글꼴을 선택하고, 크기를 조절하고, 색상을 설정하고, 텍스트를 정렬할 수 있습니다. 개별 텍스트 런에 다른 스타일을 적용하세요. 사각형, 타원, 화살표, 자유곡선으로 주석도 추가할 수 있습니다.</p>
                 </div>
-                <div class="feature-detail-visual">스크린샷 준비 중</div>
+                <div class="feature-detail-visual">
+                    <img src="../screenshots/feature-richtext-ko.jpg" alt="리치 텍스트 타이포그래피 컨트롤" loading="lazy">
+                </div>
             </div>
 
             <div class="feature-detail-item">
                 <div class="feature-detail-text">
                     <span class="feature-number">06</span>
-                    <h2>리치 텍스트 편집</h2>
-                    <p>타이포그래피를 완벽하게 제어합니다. 글꼴을 선택하고, 크기를 조절하고, 색상을 설정하고, 텍스트를 정렬할 수 있습니다. 하나의 텍스트 박스 안에서 개별 텍스트 런에 다른 스타일을 적용할 수 있습니다.</p>
+                    <h2>다중 포맷 내보내기</h2>
+                    <p>편집된 슬라이드를 새 PDF 문서, 개별 PNG/JPEG 이미지, 비디오 슬라이드쇼, 또는 애니메이션 GIF로 내보낼 수 있습니다. 원본 파일은 절대 수정되지 않습니다.</p>
                 </div>
-                <div class="feature-detail-visual">스크린샷 준비 중</div>
-            </div>
-
-            <div class="feature-detail-item">
-                <div class="feature-detail-text">
-                    <span class="feature-number">07</span>
-                    <h2>패치 기반 처리</h2>
-                    <p>SlideTouch는 전체 4K+ 이미지를 ML 모델에 보내지 않습니다. 대신, 영향을 받는 영역만 컨텍스트 패딩과 함께 잘라내고, 해당 패치만 처리한 후 다시 합성합니다. 이를 통해 품질을 유지하면서 성능을 대폭 개선합니다.</p>
+                <div class="feature-detail-visual">
+                    <div class="export-grid">
+                        <img src="../screenshots/feature-export-1-ko.jpg" alt="PDF로 내보내기 대화상자" loading="lazy">
+                        <img src="../screenshots/feature-export-2-ko.jpg" alt="이미지로 내보내기 대화상자" loading="lazy">
+                        <img src="../screenshots/feature-export-3-ko.jpg" alt="비디오로 내보내기 대화상자" loading="lazy">
+                    </div>
                 </div>
-                <div class="feature-detail-visual">스크린샷 준비 중</div>
-            </div>
-
-            <div class="feature-detail-item">
-                <div class="feature-detail-text">
-                    <span class="feature-number">08</span>
-                    <h2>유연한 내보내기</h2>
-                    <p>편집된 슬라이드를 새 PDF 문서, 개별 PNG/JPEG 이미지, 비디오 슬라이드쇼, 또는 애니메이션 GIF로 내보낼 수 있습니다. 원본 PDF 파일은 절대 수정되지 않습니다.</p>
-                </div>
-                <div class="feature-detail-visual">스크린샷 준비 중</div>
             </div>
         </div>
     </section>

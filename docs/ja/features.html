@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SlideTouch - 機能</title>
-    <meta name="description" content="SlideTouchの機能詳細：OCR、AIインペインティング、非破壊編集、図形、リッチテキストなど。">
+    <meta name="description" content="SlideTouchの機能詳細：オンデバイスOCR、背景復元、オブジェクト選択、非破壊編集、リッチテキスト、マルチフォーマット書き出し。">
 
     <link rel="canonical" href="https://puritysb.github.io/SlideTouch-support/ja/features.html">
     <link rel="alternate" hreflang="en" href="https://puritysb.github.io/SlideTouch-support/features.html">
@@ -49,79 +49,77 @@
         <div class="container">
             <div class="section-header">
                 <h1>機能</h1>
-                <p>画像スライド編集に必要なすべて</p>
+                <p>すべてMac上で実行。クラウド不要。サブスク不要。追加費用なし。</p>
             </div>
 
             <div class="feature-detail-item">
                 <div class="feature-detail-text">
                     <span class="feature-number">01</span>
-                    <h2>オンデバイスOCR</h2>
-                    <p>Apple Visionフレームワークを使用して、画像スライド内のテキストを検出・認識します。正確なバウンディングボックスでテキスト領域が特定され、検出されたテキストをクリックするだけで編集を開始できます。英語、韓国語、日本語に対応しています。</p>
+                    <h2>オンデバイステキスト検出</h2>
+                    <p>Apple Visionフレームワークを使用して、画像スライド内のテキストを検出・認識します。正確なバウンディングボックスでテキスト領域が特定され、検出されたテキストをクリックするだけで編集を開始できます。すべての処理はMacのNeural Engineでローカルに実行されます。英語、韓国語、日本語に対応しています。</p>
                 </div>
-                <div class="feature-detail-visual">スクリーンショット準備中</div>
+                <div class="feature-detail-visual">
+                    <img src="../screenshots/feature-ocr-ja.jpg" alt="オンデバイスOCRテキスト検出" loading="lazy">
+                </div>
             </div>
 
             <div class="feature-detail-item">
                 <div class="feature-detail-text">
                     <span class="feature-number">02</span>
-                    <h2>AI搭載インペインティング</h2>
-                    <p>テキストを編集する際、元の文字をまず消去する必要があります。SlideTouchはMacのNeural Engineで完全に動作するLaMaインペインティングモデルを使用して、削除されたテキストの背後の背景を復元します。グラデーション、パターン、写真の上でも動作します。</p>
+                    <h2>シームレスなテキスト置換</h2>
+                    <p>テキストを編集すると、元の文字が消去され、背景が自動的に復元されます。LaMaインペインティングモデルがMacのNeural Engineで完全に動作し、グラデーション、パターン、写真の上の背景を補完します。その後、新しいテキストが正確な位置にレンダリングされます。</p>
                 </div>
-                <div class="feature-detail-visual">スクリーンショット準備中</div>
+                <div class="feature-detail-visual">
+                    <img src="../screenshots/feature-edit-ja.jpg" alt="インラインテキスト置換と背景復元" loading="lazy">
+                </div>
             </div>
 
             <div class="feature-detail-item">
                 <div class="feature-detail-text">
                     <span class="feature-number">03</span>
-                    <h2>非破壊レイヤー編集</h2>
-                    <p>SlideTouchのすべての編集は元の画像の上のレイヤーです。書き出すまで何も永久に変更されません。いつでも編集レイヤーのオン/オフ切り替え、並べ替え、削除ができ、完全な取り消し/やり直しをサポートします。</p>
+                    <h2>オブジェクト選択・移動</h2>
+                    <p>スライド内の要素の上にストロークを描くと、オンデバイスセグメンテーションが精密なマスクを生成します。選択したオブジェクトを移動、再配置、または完全に削除できます。背後の背景はシームレスに復元されます。</p>
                 </div>
-                <div class="feature-detail-visual">スクリーンショット準備中</div>
+                <div class="feature-detail-visual">
+                    <img src="../screenshots/feature-select-ja.jpg" alt="精密セグメンテーションマスクによるオブジェクト選択" loading="lazy">
+                </div>
             </div>
 
             <div class="feature-detail-item">
                 <div class="feature-detail-text">
                     <span class="feature-number">04</span>
-                    <h2>オブジェクト選択・削除</h2>
-                    <p>SAM2セグメンテーションを使用してスライドからオブジェクトを選択・削除します。要素の上にストロークを描くと、AIが精密なマスクを生成します。オブジェクトが削除され、背景がシームレスに復元されます。</p>
+                    <h2>非破壊編集</h2>
+                    <p>SlideTouchのすべての編集は元の画像の上のレイヤーです。書き出すまで何も永久に変更されません。いつでも編集レイヤーのオン/オフ切り替え、並べ替え、削除ができ、完全な取り消し/やり直しをサポートします。サイドバーですべてのページを閲覧できます。</p>
                 </div>
-                <div class="feature-detail-visual">スクリーンショット準備中</div>
+                <div class="feature-detail-visual">
+                    <img src="../screenshots/feature-layers-ja.jpg" alt="非破壊レイヤー編集とページサイドバー" loading="lazy">
+                </div>
             </div>
 
             <div class="feature-detail-item">
                 <div class="feature-detail-text">
                     <span class="feature-number">05</span>
-                    <h2>図形描画</h2>
-                    <p>矩形、楕円、矢印、フリーハンド曲線で注釈を追加できます。ストロークの色、塗りつぶしの色、線の太さをカスタマイズ可能。重要な領域のハイライトや視覚的な強調に最適です。</p>
+                    <h2>リッチテキスト・図形</h2>
+                    <p>タイポグラフィを完全にコントロール。フォントの選択、サイズの調整、色の設定、テキストの配置が可能です。個別のテキストランに異なるスタイルを適用できます。矩形、楕円、矢印、フリーハンド曲線で注釈も追加できます。</p>
                 </div>
-                <div class="feature-detail-visual">スクリーンショット準備中</div>
+                <div class="feature-detail-visual">
+                    <img src="../screenshots/feature-richtext-ja.jpg" alt="リッチテキストタイポグラフィコントロール" loading="lazy">
+                </div>
             </div>
 
             <div class="feature-detail-item">
                 <div class="feature-detail-text">
                     <span class="feature-number">06</span>
-                    <h2>リッチテキスト編集</h2>
-                    <p>タイポグラフィを完全にコントロール。フォントの選択、サイズの調整、色の設定、テキストの配置が可能です。1つのテキストボックス内で個別のテキストランに異なるスタイルを適用できます。</p>
+                    <h2>マルチフォーマット書き出し</h2>
+                    <p>編集したスライドを新しいPDFドキュメント、個別のPNG/JPEG画像、ビデオスライドショー、またはアニメーションGIFとして書き出せます。元のファイルは一切変更されません。</p>
                 </div>
-                <div class="feature-detail-visual">スクリーンショット準備中</div>
-            </div>
-
-            <div class="feature-detail-item">
-                <div class="feature-detail-text">
-                    <span class="feature-number">07</span>
-                    <h2>パッチベース処理</h2>
-                    <p>SlideTouchはフル4K+画像をMLモデルに送信しません。代わりに、影響を受ける領域のみをコンテキストパディング付きで切り出し、そのパッチだけを処理してから合成します。これにより品質を維持しながらパフォーマンスを大幅に向上させます。</p>
+                <div class="feature-detail-visual">
+                    <div class="export-grid">
+                        <img src="../screenshots/feature-export-1-ja.jpg" alt="PDFとして書き出しダイアログ" loading="lazy">
+                        <img src="../screenshots/feature-export-2-ja.jpg" alt="画像として書き出しダイアログ" loading="lazy">
+                        <img src="../screenshots/feature-export-3-ja.jpg" alt="ビデオとして書き出しダイアログ" loading="lazy">
+                    </div>
                 </div>
-                <div class="feature-detail-visual">スクリーンショット準備中</div>
-            </div>
-
-            <div class="feature-detail-item">
-                <div class="feature-detail-text">
-                    <span class="feature-number">08</span>
-                    <h2>柔軟な書き出し</h2>
-                    <p>編集したスライドを新しいPDFドキュメント、個別のPNG/JPEG画像、ビデオスライドショー、またはアニメーションGIFとして書き出せます。元のPDFファイルは一切変更されません。</p>
-                </div>
-                <div class="feature-detail-visual">スクリーンショット準備中</div>
             </div>
         </div>
     </section>
