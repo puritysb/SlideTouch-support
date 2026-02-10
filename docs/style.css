@@ -217,16 +217,16 @@ html[lang="ja"] .text-group h1 {
 /* Hero Videos */
 .hero-videos {
     width: 100%;
-    max-width: 720px;
     display: flex;
-    flex-direction: column;
-    gap: 16px;
+    flex-direction: row;
+    gap: 12px;
+    align-items: flex-start;
 }
 
 .hero-videos video {
-    width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    width: calc(50% - 6px);
+    border-radius: 10px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
     display: block;
 }
 
@@ -908,6 +908,11 @@ footer {
 
     .hero-videos {
         max-width: 100%;
+        flex-direction: column;
+    }
+
+    .hero-videos video {
+        width: 100%;
     }
 
     .macos-mockup {
