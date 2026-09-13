@@ -26,7 +26,7 @@ SlideTouch solves this with on-device OCR + AI inpainting + text rendering:
 
 - **On-Device OCR**: Apple Vision detects text in image slides
 - **AI Inpainting**: LaMa model restores backgrounds behind removed text
-- **Non-Destructive Editing**: Layer-based edits with unlimited undo/redo
+- **Non-Destructive Editing**: Layer-based edits with undo/redo
 - **Object Selection**: SAM2 segmentation for precise object removal
 - **Shape Drawing**: Rectangles, ellipses, arrows, freeform curves
 - **Rich Text**: Fonts, sizes, colors, alignment per text run
@@ -40,7 +40,7 @@ SlideTouch solves this with on-device OCR + AI inpainting + text rendering:
 
 ### Privacy
 
-100% on-device processing. No network access. No tracking.
+Document OCR and image processing run on-device. Optional purchases use Apple services.
 
 ---
 
@@ -53,3 +53,7 @@ Please use [GitHub Issues](https://github.com/puritysb/SlideTouch-support/issues
 ## License
 
 Support materials in this repository are licensed under the [MIT License](LICENSE). SlideTouch app itself is proprietary software.
+
+## Landing page updates
+
+Run `python3 scripts/refresh_home.py` to rebuild EN/KO/JA homepages. These retain the existing page head, navigation and footer. The script owns landing page copy; `docs/landing.css` and `docs/landing.js` own layout and interactions. See `docs/media/1.2/README.md` for media provenance. The 1.2 demo is labeled as submitted for review until release is confirmed.

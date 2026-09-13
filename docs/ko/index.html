@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SlideTouch - 이미지 슬라이드를 픽셀 단위로 편집</title>
+    <title>SlideTouch — 슬라이드는 그대로. 글자만 새롭게.</title>
 
-    <meta name="description" content="이미지 기반 PDF 슬라이드를 픽셀 단위로 편집하는 macOS 네이티브 앱. 온디바이스 OCR + 인페인팅 + 텍스트 렌더링.">
+    <meta name="description" content="바뀐 날짜, 다듬고 싶은 제목. 이미지로 된 PDF에서도 발표 자료 전체를 다시 만들지 않고 필요한 문구를 수정하세요.">
     <meta property="og:title" content="SlideTouch">
-    <meta property="og:description" content="이미지 기반 PDF 슬라이드를 픽셀 단위로 편집. 온디바이스 OCR + 인페인팅 + 텍스트 렌더링.">
+    <meta property="og:description" content="바뀐 날짜, 다듬고 싶은 제목. 이미지로 된 PDF에서도 발표 자료 전체를 다시 만들지 않고 필요한 문구를 수정하세요.">
     <meta property="og:image" content="https://puritysb.github.io/SlideTouch-support/og-image.png">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://puritysb.github.io/SlideTouch-support/ko/">
@@ -23,12 +23,8 @@
     <link rel="icon" type="image/png" href="../app-icon.png">
     <link rel="stylesheet" href="../style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
-</head>
-
-<body>
-    <div class="background-gradient"></div>
-
-    <nav class="navbar">
+<link rel="stylesheet" href="../landing.css">
+</head><body class="landing"><a class="skip" href="#main">본문으로 이동</a><nav class="navbar">
         <div class="container">
             <a href="/SlideTouch-support/ko/" class="logo">SlideTouch</a>
             <div class="nav-links">
@@ -43,173 +39,18 @@
                         </svg>
                     </button>
                     <div class="lang-dropdown">
-                        <a href="/" class="lang-option" data-lang="en">English</a>
-                        <a href="/ko/" class="lang-option" data-lang="ko">한국어</a>
-                        <a href="/ja/" class="lang-option" data-lang="ja">日本語</a>
+                        <a href="/SlideTouch-support/" class="lang-option" data-lang="en">English</a>
+                        <a href="/SlideTouch-support/ko/" class="lang-option" data-lang="ko">한국어</a>
+                        <a href="/SlideTouch-support/ja/" class="lang-option" data-lang="ja">日本語</a>
                     </div>
                 </div>
             </div>
         </div>
     </nav>
-
-    <!-- Hero -->
-    <header class="hero">
-        <div class="container hero-content">
-            <div class="text-group">
-                <span class="badge">macOS 네이티브</span>
-                <h1>이미지 슬라이드를<br>픽셀 단위로 편집</h1>
-                <p class="subtitle">
-                    이미지 기반 PDF 슬라이드의 오타를 전체 재생성 없이 수정하세요.<br>
-                    온디바이스 OCR + 인페인팅 + 텍스트 렌더링.
-                </p>
-                <div class="cta-group" id="download">
-                    <a href="features.html" class="cta-btn">기능 살펴보기</a>
-                    <a href="releases.html" class="cta-btn outline">릴리즈 노트</a>
-                </div>
-            </div>
-            <div class="hero-videos">
-                <video autoplay muted loop playsinline poster="../screenshots/hero-ko.jpg">
-                    <source src="../videos/preview-3-ko.mp4" type="video/mp4">
-                </video>
-                <video autoplay muted loop playsinline>
-                    <source src="../videos/preview-4-ko.mp4" type="video/mp4">
-                </video>
-            </div>
-        </div>
-    </header>
-
-    <!-- 문제 / 해결 -->
-    <section class="problem-solution">
-        <div class="container">
-            <div class="section-header">
-                <h2>우리가 해결하는 문제</h2>
-            </div>
-            <div class="ps-grid">
-                <div class="ps-card problem">
-                    <div class="icon">😤</div>
-                    <h3>이미지 슬라이드는 편집이 불가능</h3>
-                    <p>NotebookLM, Canva 등에서 만든 슬라이드는 아름답지만, 전체가 이미지로 평탄화되어 있습니다. 오타 하나를 고치려면 전체 덱을 다시 생성해야 합니다.</p>
-                </div>
-                <div class="ps-card solution">
-                    <div class="icon">✨</div>
-                    <h3>SlideTouch가 편집 가능하게 만듭니다</h3>
-                    <p>온디바이스 OCR로 텍스트를 감지하고, Neural Engine 인페인팅으로 깔끔하게 지운 뒤, 정밀한 렌더링으로 새 텍스트를 배치합니다. 슬라이드의 어떤 픽셀이든 편집할 수 있습니다.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 핵심 기능 -->
-    <section class="features">
-        <div class="container">
-            <div class="section-header">
-                <h2>핵심 기능</h2>
-            </div>
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <div class="icon">🔍</div>
-                    <h3>온디바이스 텍스트 감지</h3>
-                    <p>Apple Vision 프레임워크가 이미지 슬라이드에서 텍스트를 감지합니다. Mac에서 완전히 실행됩니다.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon">🎨</div>
-                    <h3>매끄러운 텍스트 교체</h3>
-                    <p>원본 텍스트가 지워지고 Neural Engine이 배경을 복원한 후, 새 텍스트가 그 자리에 렌더링됩니다.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon">🎯</div>
-                    <h3>오브젝트 선택 및 이동</h3>
-                    <p>스트로크를 그려 요소를 선택하세요. 이동, 위치 변경, 제거 가능. 배경이 매끄럽게 채워집니다.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon">📐</div>
-                    <h3>비파괴 편집</h3>
-                    <p>모든 편집은 오버레이 레이어. 무제한 실행 취소/다시 실행. 내보내기 전까지 변경 없음.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon">✏️</div>
-                    <h3>리치 텍스트 및 도형</h3>
-                    <p>글꼴, 크기, 색상, 정렬 완벽 제어. 사각형, 타원, 화살표, 자유곡선도 지원합니다.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon">📤</div>
-                    <h3>다중 포맷 내보내기</h3>
-                    <p>PDF, PNG, JPEG, 비디오 슬라이드쇼, 애니메이션 GIF로 내보내기. 원본 파일은 수정되지 않습니다.</p>
-                </div>
-            </div>
-            <div class="privacy-notice">
-                <span class="privacy-icon">🔒</span>
-                <span>100% 온디바이스 처리. 파일이 Mac 밖으로 나가지 않습니다.</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- 작동 방식 -->
-    <section class="how-it-works">
-        <div class="container">
-            <div class="section-header">
-                <h2>작동 방식</h2>
-            </div>
-            <div class="flow-grid">
-                <div class="flow-card">
-                    <div class="flow-number">1</div>
-                    <h3>PDF 열기</h3>
-                    <p>이미지 기반 PDF를 SlideTouch에 드롭하세요. 페이지가 원본 해상도로 렌더링됩니다.</p>
-                </div>
-                <div class="flow-card">
-                    <div class="flow-number">2</div>
-                    <h3>편집</h3>
-                    <p>텍스트를 클릭하면 편집이 시작됩니다. 원본은 인페인팅으로 지워지고 새 텍스트가 제자리에 렌더링됩니다.</p>
-                </div>
-                <div class="flow-card">
-                    <div class="flow-number">3</div>
-                    <h3>내보내기</h3>
-                    <p>새 PDF, 이미지, 또는 비디오로 저장하세요. 원본 파일은 절대 수정되지 않습니다.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 시스템 요구사항 -->
-
-    <section class="edit-demo" id="text-edit-example" aria-labelledby="edit-demo-title">
-      <div class="container"><div class="section-header"><span class="edit-demo-eyebrow">실제 처리 예시</span><h2 id="edit-demo-title">이미지 속 문장을, 새 문장으로.</h2><p>텍스트가 포함된 같은 슬라이드로 OCR 감지부터 배경 복원과 새 텍스트 렌더링까지 확인하세요.</p></div>
-      <div class="edit-demo-grid"><figure class="edit-demo-card"><figcaption><span class="edit-demo-step">01</span><h3>원본 슬라이드</h3><p>Photo Background가 이미지에 포함된 원본입니다.</p></figcaption><a class="edit-demo-image" href="../examples/text-edit/demo-original.png" aria-label="원본 슬라이드 — 크게 보기"><img src="../examples/text-edit/demo-original.png" width="1224" height="1584" loading="lazy" alt="원본 슬라이드: Photo Background"></a></figure><figure class="edit-demo-card"><figcaption><span class="edit-demo-step">02</span><h3>OCR 영역 선택</h3><p>실제 OCR 좌표를 파란 테두리로 표시했습니다. 인식한 문장을 선택해 수정합니다.</p></figcaption><a class="edit-demo-image" href="../examples/text-edit/demo-original.png" aria-label="OCR 영역 선택 — 크게 보기"><img src="../examples/text-edit/demo-original.png" width="1224" height="1584" loading="lazy" alt="OCR 영역 선택: Photo Background"><span class="edit-demo-box" style="left:10.15038%;top:42.86616%;width:63.72181%;height:5.55556%" aria-hidden="true"></span></a></figure><figure class="edit-demo-card"><figcaption><span class="edit-demo-step">03</span><h3>수정 + 배경 복원</h3><p>Summer Workshop으로 교체한 실제 처리 결과입니다.</p></figcaption><a class="edit-demo-image" href="../examples/text-edit/demo-edited.png" aria-label="수정 + 배경 복원 — 크게 보기"><img src="../examples/text-edit/demo-edited.png" width="1224" height="1584" loading="lazy" alt="수정 + 배경 복원: Summer Workshop"></a></figure></div>
-      <details class="edit-demo-detail"><summary>배경 복원을 자세히 보기</summary><div class="edit-demo-closeups"><figure><figcaption>원본 슬라이드</figcaption><img src="../examples/text-edit/demo-original.png" loading="lazy" alt="Photo Background"></figure><figure><figcaption>수정 + 배경 복원</figcaption><img src="../examples/text-edit/demo-edited.png" loading="lazy" alt="Summer Workshop"></figure></div></details>
-      <p class="edit-demo-note">검증용 합성 슬라이드 · 개발 빌드 처리 결과. 앱 화면 캡처가 아니며, 파란 테두리는 실제 OCR 좌표를 표시한 안내입니다. 흰색 글자를 명시적으로 지정했습니다. 복잡한 무늬는 복원 영역에서 흐려질 수 있습니다.</p></div>
-    </section>
-
-    <section class="system-req">
-        <div class="container">
-            <div class="section-header">
-                <h2>시스템 요구사항</h2>
-            </div>
-            <div class="req-grid">
-                <div class="req-item">
-                    <div class="icon">💻</div>
-                    <h3>macOS 15.1+</h3>
-                    <p>Sequoia 이상</p>
-                </div>
-                <div class="req-item">
-                    <div class="icon">⚡</div>
-                    <h3>Apple Silicon</h3>
-                    <p>M1 이상 필수</p>
-                </div>
-                <div class="req-item">
-                    <div class="icon">🧠</div>
-                    <h3>8GB+ RAM</h3>
-                    <p>ML 추론에 권장</p>
-                </div>
-                <div class="req-item">
-                    <div class="icon">💾</div>
-                    <h3>~500MB</h3>
-                    <p>앱 + ML 모델 용량</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
+<main id="main"><header class="landing-hero container"><div class="hero-copy"><p class="eyebrow">이미지 PDF 편집기 · MAC 전용</p><h1>슬라이드는 그대로.<br>글자만 새롭게.</h1><p class="lead">바뀐 날짜, 다듬고 싶은 제목. 이미지로 된 PDF에서도 발표 자료 전체를 다시 만들지 않고 필요한 문구를 수정하세요.</p><div class="actions"><a class="primary" href="https://apps.apple.com/app/id6758996914">App Store에서 보기 ↗</a><a href="#demo">실제 편집 과정 보기 ↓</a></div><p class="trust">편집·내보내기 무료 · 문서 처리는 Mac 안에서</p></div><figure class="hero-photo"><img src="../media/1.2/ko-edited.jpg" width="1440" height="810" alt="실제 수정 결과" fetchpriority="high"><figcaption>실제 수정 결과 · SlideTouch 1.2</figcaption></figure></header>
+<section class="proof-section" id="text-edit-example"><div class="container"><p class="eyebrow">BEFORE / AFTER</p><h2>같은 사진 위에, 새로운 문장.</h2><p class="section-intro">돌의 질감, 그림자, 작은 디테일이 있는 배경입니다. 원본과 실제 배경 복원·텍스트 교체 결과를 직접 비교해 보세요.</p><div class="compare" style="--split:50%"><img src="../media/1.2/ko-edited.jpg" width="1440" height="810" alt="실제 수정 결과" loading="lazy"><img class="before-image" src="../media/1.2/ko-input.jpg" width="1440" height="810" alt="원본 이미지" loading="lazy"><span class="compare-label before-label">원본 이미지</span><span class="compare-label after-label">실제 수정 결과</span><span class="compare-line" aria-hidden="true"></span></div><label class="range-label" for="compare-range">슬라이더를 움직여 원본과 수정 결과 비교</label><input id="compare-range" type="range" min="0" max="100" value="50" aria-label="슬라이더를 움직여 원본과 수정 결과 비교"><p class="fineprint">가상 행사용 생성 이미지에 실제 온디바이스 처리를 적용한 결과입니다. 배경에 따라 품질이 달라지며 가려진 디테일이나 원래 글꼴을 정확히 복원하지는 못합니다.</p></div></section>
+<section class="container demo-section" id="demo"><div class="demo-heading"><div><p class="eyebrow">IN THE APP</p><h2>편집하는 순간을 보세요.</h2><p class="section-intro">OCR 선택부터 문구 수정, 복원 결과 확인, PDF 저장까지. 실제 Mac 앱에서 촬영했습니다.</p></div><label>데모 언어<select id="demo-language"><option value="en">English</option><option value="ko" selected>한국어</option><option value="ja">日本語</option><option value="zh-Hans">简体中文</option><option value="zh-Hant">繁體中文</option></select></label></div><video id="demo-video" controls playsinline preload="none" poster="../media/1.2/ko-poster.jpg" aria-label="편집하는 순간을 보세요."><source src="../media/1.2/ko-demo.mp4" type="video/mp4"></video><p class="fineprint">30초 데모 · 일부 구간은 영상에 표시된 2배속 · 소리 없음</p><p class="release-note">1.2 버전 미리보기 · App Store 심사 제출 완료. 현재 스토어에는 이전 버전이 표시될 수 있습니다.</p></section>
+<section class="container workflow"><h2>이미지 슬라이드도, 필요한 부분부터.</h2><div class="steps"><article><span>01 / 선택</span><h3>글자를 찾고</h3><p>PDF나 이미지를 열어 OCR로 인식된 글자 영역을 선택합니다.</p></article><article><span>02 / 보정</span><h3>내 문구에 맞추고</h3><p>내용·글꼴·색상·자간을 바꾸고, 복원된 배경을 확인하고 조정한 뒤 적용합니다.</p></article><article><span>03 / 저장</span><h3>원본은 보관하세요</h3><p>실행 취소와 다시 실행으로 수정하고, 새 PDF·이미지·영상·GIF로 내보냅니다.</p></article></div><a href="features.html">전체 기능 보기 →</a></section><section class="container faq"><h2>사용 전에 궁금한 점.</h2><details><summary>편집은 무료인가요?</summary><p>모든 편집·내보내기 기능은 무료입니다. 1.2 버전의 도움말·설정에서 선택적으로 개발을 응원할 수 있습니다. 구매할 때마다 별도 결제되는 일회성 팁이며, 구독이나 추가 기능은 없습니다.</p></details><details><summary>PDF가 외부로 전송되나요?</summary><p>OCR와 이미지 처리는 Mac 안에서 이루어집니다. 선택적 결제에는 Apple 결제 서비스를 이용하며, 문서 처리용으로 파일을 전송하지 않습니다.</p></details><details><summary>어떤 배경이든 완벽하게 복원되나요?</summary><p>아닙니다. 사진·무늬·작은 글자·저해상도 스캔은 수동 보정이 필요할 수 있습니다. 결과를 비교하고 복원 범위를 조정한 뒤 저장하세요.</p></details><details><summary>어떤 Mac과 언어를 지원하나요?</summary><p>macOS 15.1 이상, Apple Silicon Mac(M1 이상)이 필요합니다. 1.2 앱 화면은 영어·한국어·일본어·중국어 간체·번체를 지원합니다.</p></details></section><section class="closing"><div class="container"><h2>작은 수정 하나로,<br>발표를 이어가세요.</h2><p>원본은 남기고, 필요한 부분을 바꾸세요.</p><a class="primary" href="https://apps.apple.com/app/id6758996914">App Store에서 보기 ↗</a></div></section></main><footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">SlideTouch</div>
@@ -222,19 +63,4 @@
                 </div>
             </div>
         </div>
-    </footer>
-
-    <script src="../lang-switcher.js"></script>
-    <script>
-        const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(function(entry) {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        });
-        document.querySelectorAll('.feature-card').forEach(function(el) { observer.observe(el); });
-    </script>
-</body>
-
-</html>
+    </footer><script src="../lang-switcher.js"></script><script src="../landing.js"></script></body></html>

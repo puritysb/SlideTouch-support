@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SlideTouch - Edit Image Slides, Pixel by Pixel</title>
+    <title>SlideTouch — Change the words. Keep the slide.</title>
 
     <!-- SEO & Open Graph -->
-    <meta name="description" content="A macOS-native app for pixel-level editing of image-based PDF slides. On-device OCR, inpainting, and text rendering.">
+    <meta name="description" content="A date changed. A heading needs work. Edit text in an image-based PDF without rebuilding the whole presentation.">
     <meta property="og:title" content="SlideTouch">
-    <meta property="og:description" content="Edit image-based PDF slides pixel by pixel. On-device OCR + Inpainting + Text rendering.">
+    <meta property="og:description" content="A date changed. A heading needs work. Edit text in an image-based PDF without rebuilding the whole presentation.">
     <meta property="og:image" content="https://puritysb.github.io/SlideTouch-support/og-image.png">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://puritysb.github.io/SlideTouch-support/">
@@ -27,12 +27,8 @@
     <link rel="icon" type="image/png" href="app-icon.png">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+KR:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
-</head>
-
-<body>
-    <div class="background-gradient"></div>
-
-    <nav class="navbar">
+<link rel="stylesheet" href="landing.css">
+</head><body class="landing"><a class="skip" href="#main">Skip to content</a><nav class="navbar">
         <div class="container">
             <a href="/SlideTouch-support/" class="logo">SlideTouch</a>
             <div class="nav-links">
@@ -48,174 +44,18 @@
                         </svg>
                     </button>
                     <div class="lang-dropdown">
-                        <a href="/" class="lang-option" data-lang="en">English</a>
-                        <a href="/ko/" class="lang-option" data-lang="ko">한국어</a>
-                        <a href="/ja/" class="lang-option" data-lang="ja">日本語</a>
+                        <a href="/SlideTouch-support/" class="lang-option" data-lang="en">English</a>
+                        <a href="/SlideTouch-support/ko/" class="lang-option" data-lang="ko">한국어</a>
+                        <a href="/SlideTouch-support/ja/" class="lang-option" data-lang="ja">日本語</a>
                     </div>
                 </div>
             </div>
         </div>
     </nav>
-
-    <!-- Hero -->
-    <header class="hero">
-        <div class="container hero-content">
-            <div class="text-group">
-                <span class="badge">macOS Native</span>
-                <h1>Edit Image Slides,<br>Pixel by Pixel</h1>
-                <p class="subtitle">
-                    Fix typos in image-based PDF slides without regenerating the entire deck.<br>
-                    On-device OCR + Inpainting + Text rendering.
-                </p>
-                <div class="cta-group" id="download">
-                    <a href="features.html" class="cta-btn">Explore Features</a>
-                    <a href="releases.html" class="cta-btn outline">Release Notes</a>
-                </div>
-            </div>
-            <div class="hero-videos">
-                <video autoplay muted loop playsinline poster="screenshots/hero-en.jpg">
-                    <source src="videos/preview-3-en.mp4" type="video/mp4">
-                </video>
-                <video autoplay muted loop playsinline>
-                    <source src="videos/preview-4-en.mp4" type="video/mp4">
-                </video>
-            </div>
-        </div>
-    </header>
-
-    <!-- Problem / Solution -->
-    <section class="problem-solution">
-        <div class="container">
-            <div class="section-header">
-                <h2>The Problem We Solve</h2>
-            </div>
-            <div class="ps-grid">
-                <div class="ps-card problem">
-                    <div class="icon">😤</div>
-                    <h3>Image-Based Slides Are Uneditable</h3>
-                    <p>Slides from NotebookLM, Canva, and similar tools look beautiful but are entirely flattened images. To fix a single typo, you have to regenerate the whole deck.</p>
-                </div>
-                <div class="ps-card solution">
-                    <div class="icon">✨</div>
-                    <h3>SlideTouch Makes Them Editable</h3>
-                    <p>Using on-device OCR to detect text, Neural Engine inpainting to erase it cleanly, and precise rendering to place new text, SlideTouch lets you edit any pixel in a slide.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Key Features Grid -->
-    <section class="features">
-        <div class="container">
-            <div class="section-header">
-                <h2>Key Features</h2>
-            </div>
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <div class="icon">🔍</div>
-                    <h3>On-Device Text Detection</h3>
-                    <p>Apple Vision framework detects text in image slides with bounding boxes. Runs entirely on your Mac.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon">🎨</div>
-                    <h3>Seamless Text Replacement</h3>
-                    <p>Original text is erased and the background restored by the Neural Engine, then new text is rendered in place.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon">🎯</div>
-                    <h3>Object Selection & Move</h3>
-                    <p>Draw a stroke to select any element. Move, reposition, or remove it. Background is seamlessly filled.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon">📐</div>
-                    <h3>Non-Destructive Editing</h3>
-                    <p>All edits are overlay layers. Unlimited undo/redo. Nothing changes until you export.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon">✏️</div>
-                    <h3>Rich Text & Shapes</h3>
-                    <p>Full typography control with fonts, sizes, colors, alignment. Plus rectangles, ellipses, arrows, and freeform curves.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon">📤</div>
-                    <h3>Multi-Format Export</h3>
-                    <p>Export as PDF, PNG, JPEG, video slideshow, or animated GIF. Original file is never modified.</p>
-                </div>
-            </div>
-            <div class="privacy-notice">
-                <span class="privacy-icon">🔒</span>
-                <span>100% on-device processing. Your files never leave your Mac.</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- How It Works -->
-    <section class="how-it-works">
-        <div class="container">
-            <div class="section-header">
-                <h2>How It Works</h2>
-            </div>
-            <div class="flow-grid">
-                <div class="flow-card">
-                    <div class="flow-number">1</div>
-                    <h3>Open PDF</h3>
-                    <p>Drop your image-based PDF into SlideTouch. Pages are rendered at full resolution.</p>
-                </div>
-                <div class="flow-card">
-                    <div class="flow-number">2</div>
-                    <h3>Edit</h3>
-                    <p>Click any text to edit it. The original is inpainted away and your new text is rendered in place.</p>
-                </div>
-                <div class="flow-card">
-                    <div class="flow-number">3</div>
-                    <h3>Export</h3>
-                    <p>Save as a new PDF, image, or video. The original file is never modified.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- System Requirements -->
-
-    <section class="edit-demo" id="text-edit-example" aria-labelledby="edit-demo-title">
-      <div class="container"><div class="section-header"><span class="edit-demo-eyebrow">Actual processing example</span><h2 id="edit-demo-title">A new sentence. On the same slide.</h2><p>Follow a slide with existing text through OCR detection, background restoration and replacement text rendering.</p></div>
-      <div class="edit-demo-grid"><figure class="edit-demo-card"><figcaption><span class="edit-demo-step">01</span><h3>Original slide</h3><p>Photo Background is part of the original image.</p></figcaption><a class="edit-demo-image" href="examples/text-edit/demo-original.png" aria-label="Original slide — View full size"><img src="examples/text-edit/demo-original.png" width="1224" height="1584" loading="lazy" alt="Original slide: Photo Background"></a></figure><figure class="edit-demo-card"><figcaption><span class="edit-demo-step">02</span><h3>Select the OCR region</h3><p>The blue outline shows measured OCR bounds. Select the recognized text to edit it.</p></figcaption><a class="edit-demo-image" href="examples/text-edit/demo-original.png" aria-label="Select the OCR region — View full size"><img src="examples/text-edit/demo-original.png" width="1224" height="1584" loading="lazy" alt="Select the OCR region: Photo Background"><span class="edit-demo-box" style="left:10.15038%;top:42.86616%;width:63.72181%;height:5.55556%" aria-hidden="true"></span></a></figure><figure class="edit-demo-card"><figcaption><span class="edit-demo-step">03</span><h3>Replace + restore</h3><p>The actual result after replacing the text with Summer Workshop.</p></figcaption><a class="edit-demo-image" href="examples/text-edit/demo-edited.png" aria-label="Replace + restore — View full size"><img src="examples/text-edit/demo-edited.png" width="1224" height="1584" loading="lazy" alt="Replace + restore: Summer Workshop"></a></figure></div>
-      <details class="edit-demo-detail"><summary>Inspect the restored background</summary><div class="edit-demo-closeups"><figure><figcaption>Original slide</figcaption><img src="examples/text-edit/demo-original.png" loading="lazy" alt="Photo Background"></figure><figure><figcaption>Replace + restore</figcaption><img src="examples/text-edit/demo-edited.png" loading="lazy" alt="Summer Workshop"></figure></div></details>
-      <p class="edit-demo-note">Synthetic test slide · processed with a development build. These are pipeline outputs, not app screenshots; the blue outline illustrates measured OCR bounds. White text was explicitly selected. Detailed patterns may look softer in the restored area.</p></div>
-    </section>
-
-    <section class="system-req">
-        <div class="container">
-            <div class="section-header">
-                <h2>System Requirements</h2>
-            </div>
-            <div class="req-grid">
-                <div class="req-item">
-                    <div class="icon">💻</div>
-                    <h3>macOS 15.1+</h3>
-                    <p>Sequoia or later</p>
-                </div>
-                <div class="req-item">
-                    <div class="icon">⚡</div>
-                    <h3>Apple Silicon</h3>
-                    <p>M1 or later required</p>
-                </div>
-                <div class="req-item">
-                    <div class="icon">🧠</div>
-                    <h3>8GB+ RAM</h3>
-                    <p>Recommended for ML inference</p>
-                </div>
-                <div class="req-item">
-                    <div class="icon">💾</div>
-                    <h3>~500MB</h3>
-                    <p>For app + ML models</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
+<main id="main"><header class="landing-hero container"><div class="hero-copy"><p class="eyebrow">IMAGE PDF EDITOR · MADE FOR MAC</p><h1>Change the words.<br>Keep the slide.</h1><p class="lead">A date changed. A heading needs work. Edit text in an image-based PDF without rebuilding the whole presentation.</p><div class="actions"><a class="primary" href="https://apps.apple.com/app/id6758996914">View on the App Store ↗</a><a href="#demo">Watch the real workflow ↓</a></div><p class="trust">Free editing & export · On-device document processing</p></div><figure class="hero-photo"><img src="media/1.2/en-edited.jpg" width="1440" height="810" alt="Edited result" fetchpriority="high"><figcaption>Edited result · SlideTouch 1.2</figcaption></figure></header>
+<section class="proof-section" id="text-edit-example"><div class="container"><p class="eyebrow">BEFORE / AFTER</p><h2>Same photo. A different message.</h2><p class="section-intro">Text over stone, shadows, and fine detail. Compare the original image with the actual background restoration and replacement text.</p><div class="compare" style="--split:50%"><img src="media/1.2/en-edited.jpg" width="1440" height="810" alt="Edited result" loading="lazy"><img class="before-image" src="media/1.2/en-input.jpg" width="1440" height="810" alt="Original image" loading="lazy"><span class="compare-label before-label">Original image</span><span class="compare-label after-label">Edited result</span><span class="compare-line" aria-hidden="true"></span></div><label class="range-label" for="compare-range">Drag to compare the original and edited slide</label><input id="compare-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare the original and edited slide"><p class="fineprint">Generated sample image, actual on-device output. Restoration quality varies with the background; hidden details and original fonts cannot be recovered exactly.</p></div></section>
+<section class="container demo-section" id="demo"><div class="demo-heading"><div><p class="eyebrow">IN THE APP</p><h2>See the edit happen.</h2><p class="section-intro">OCR selection, text replacement, restoration preview, and a new PDF — recorded in the actual Mac app.</p></div><label>Demo language<select id="demo-language"><option value="en" selected>English</option><option value="ko">한국어</option><option value="ja">日本語</option><option value="zh-Hans">简体中文</option><option value="zh-Hant">繁體中文</option></select></label></div><video id="demo-video" controls playsinline preload="none" poster="media/1.2/en-poster.jpg" aria-label="See the edit happen."><source src="media/1.2/en-demo.mp4" type="video/mp4"></video><p class="fineprint">30-second demo · Some steps play at 2×, as labeled in the video · No audio</p><p class="release-note">Preview of version 1.2 · Submitted for App Review. The App Store may still show the previous version.</p></section>
+<section class="container workflow"><h2>From a flattened slide to a useful edit.</h2><div class="steps"><article><span>01 / SELECT</span><h3>Find the text</h3><p>Open a PDF or image and select an OCR text region.</p></article><article><span>02 / REFINE</span><h3>Make it fit</h3><p>Change the words, font, color, or spacing. Inspect and adjust the restored background before applying it.</p></article><article><span>03 / EXPORT</span><h3>Keep the original</h3><p>Use undo and redo, then export a new PDF, image, video, or GIF.</p></article></div><a href="features.html">Explore all features →</a></section><section class="container faq"><h2>A few things to know.</h2><details><summary>Is editing free?</summary><p>All editing and export features are free. Version 1.2 adds a voluntary one-time developer tip in Help or Settings. Each purchase is a separate charge. It unlocks nothing and is not a subscription.</p></details><details><summary>Does my PDF leave my Mac?</summary><p>OCR and image processing run locally. Optional purchases use Apple’s payment services; your document is not sent for processing.</p></details><details><summary>Will every background look perfect?</summary><p>No. Photos, patterns, small text, and low-resolution scans can need manual adjustment. Compare the result and refine the restoration area before exporting.</p></details><details><summary>Which Macs and languages are supported?</summary><p>Requires macOS 15.1 or later and an Apple Silicon Mac (M1 or later). The 1.2 interface supports English, Korean, Japanese, Simplified Chinese, and Traditional Chinese.</p></details></section><section class="closing"><div class="container"><h2>Your slide. One small correction.</h2><p>Keep the presentation moving.</p><a class="primary" href="https://apps.apple.com/app/id6758996914">View on the App Store ↗</a></div></section></main><footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">SlideTouch</div>
@@ -228,19 +68,4 @@
                 </div>
             </div>
         </div>
-    </footer>
-
-    <script src="lang-switcher.js"></script>
-    <script>
-        const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(function(entry) {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        });
-        document.querySelectorAll('.feature-card').forEach(function(el) { observer.observe(el); });
-    </script>
-</body>
-
-</html>
+    </footer><script src="lang-switcher.js"></script><script src="landing.js"></script></body></html>

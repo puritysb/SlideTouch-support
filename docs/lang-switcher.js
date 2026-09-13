@@ -67,13 +67,24 @@
 
         if (!switcher || !button) return;
 
+        button.setAttribute('aria-expanded', 'false');
         button.addEventListener('click', function(e) {
             e.stopPropagation();
             switcher.classList.toggle('open');
+            button.setAttribute('aria-expanded', String(switcher.classList.contains('open')));
         });
 
         document.addEventListener('click', function() {
             switcher.classList.remove('open');
+            button.setAttribute('aria-expanded', 'false');
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && switcher.classList.contains('open')) {
+                switcher.classList.remove('open');
+                button.setAttribute('aria-expanded', 'false');
+                button.focus();
+            }
         });
 
         var dropdown = document.querySelector('.lang-dropdown');

@@ -62,7 +62,7 @@
                 <div class="faq-list">
                     <details class="faq-item">
                         <summary>왜 Apple Silicon이 필요한가요?</summary>
-                        <p>SlideTouch는 Apple Silicon 칩의 Neural Engine에 의존하는 Core ML 모델을 사용합니다. Intel Mac에는 이 하드웨어가 없어서, CPU만으로는 추론 속도가 실용적이지 않습니다.</p>
+                        <p>SlideTouch는 Apple Silicon Mac용으로 빌드됩니다. 앱에 포함된 이미지 처리 모델은 Core ML로 로컬에서 실행하며, Intel Mac은 지원하지 않습니다.</p>
                     </details>
                     <details class="faq-item">
                         <summary>일반 (텍스트 기반) PDF도 편집할 수 있나요?</summary>
@@ -74,11 +74,11 @@
                     </details>
                     <details class="faq-item">
                         <summary>OCR은 어떤 언어를 지원하나요?</summary>
-                        <p>한국어, 영어, 일본어를 포함하여 중국어(간체/번체), 프랑스어, 독일어, 스페인어, 포르투갈어, 러시아어, 우크라이나어, 태국어, 베트남어 등 13개 언어를 지원합니다. 설정에서 원하는 언어를 선택할 수 있으며, 언어 인식은 Apple Vision 프레임워크에 기반합니다.</p>
+                        <p>설정에서 한국어, 영어, 일본어, 중국어 간체·번체 등 OCR 언어를 선택하세요. 사용 가능한 인식 언어는 Apple Vision과 운영체제에 따라 달라집니다.</p>
                     </details>
                     <details class="faq-item">
                         <summary>인터넷 연결이 필요한가요?</summary>
-                        <p>아닙니다. 모든 처리는 기기에서 완전히 이루어집니다. SlideTouch는 네트워크 기능이 없으며, 파일을 어디에도 업로드하지 않습니다.</p>
+                        <p>문서 OCR와 이미지 처리는 오프라인으로 동작합니다. 앱 다운로드·업데이트, 선택적 Apple 결제, 외부 지원 링크에는 인터넷을 사용합니다.</p>
                     </details>
                     <details class="faq-item">
                         <summary>인페인팅 결과가 흐릿하거나 아티팩트가 있어요</summary>
@@ -106,7 +106,7 @@
                 </ul>
 
                 <h2>개인정보 보호</h2>
-                <p>SlideTouch는 모든 것을 기기에서 처리하며 네트워크 접근이 없습니다. 자세한 내용은 <a href="privacy.html">개인정보처리방침</a>을 참고하세요.</p>
+                <p>문서 처리는 Mac 안에서 이루어집니다. 선택적 결제는 Apple 서비스를 이용합니다. <a href="privacy.html">개인정보처리방침</a>을 확인하세요.</p>
             </div>
         </div>
     </section>
