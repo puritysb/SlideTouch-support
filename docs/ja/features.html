@@ -124,6 +124,14 @@
         </div>
     </section>
 
+
+    <section class="edit-demo" id="text-edit-example" aria-labelledby="edit-demo-title">
+      <div class="container"><div class="section-header"><span class="edit-demo-eyebrow">実際の処理例</span><h2 id="edit-demo-title">画像の中の文章を、新しい文章へ。</h2><p>文字を含む同じスライドで、OCR検出から背景復元、新しい文字の描画までを確認できます。</p></div>
+      <div class="edit-demo-grid"><figure class="edit-demo-card"><figcaption><span class="edit-demo-step">01</span><h3>元のスライド</h3><p>Photo Backgroundが元の画像に含まれています。</p></figcaption><a class="edit-demo-image" href="../examples/text-edit/demo-original.png" aria-label="元のスライド — 原寸で見る"><img src="../examples/text-edit/demo-original.png" width="1224" height="1584" loading="lazy" alt="元のスライド: Photo Background"></a></figure><figure class="edit-demo-card"><figcaption><span class="edit-demo-step">02</span><h3>OCR領域を選択</h3><p>青い枠は実測したOCR座標です。認識した文章を選んで編集します。</p></figcaption><a class="edit-demo-image" href="../examples/text-edit/demo-original.png" aria-label="OCR領域を選択 — 原寸で見る"><img src="../examples/text-edit/demo-original.png" width="1224" height="1584" loading="lazy" alt="OCR領域を選択: Photo Background"><span class="edit-demo-box" style="left:10.15038%;top:42.86616%;width:63.72181%;height:5.55556%" aria-hidden="true"></span></a></figure><figure class="edit-demo-card"><figcaption><span class="edit-demo-step">03</span><h3>文字変更と背景復元</h3><p>Summer Workshopに置き換えた実際の処理結果です。</p></figcaption><a class="edit-demo-image" href="../examples/text-edit/demo-edited.png" aria-label="文字変更と背景復元 — 原寸で見る"><img src="../examples/text-edit/demo-edited.png" width="1224" height="1584" loading="lazy" alt="文字変更と背景復元: Summer Workshop"></a></figure></div>
+      <details class="edit-demo-detail"><summary>復元した背景を詳しく見る</summary><div class="edit-demo-closeups"><figure><figcaption>元のスライド</figcaption><img src="../examples/text-edit/demo-original.png" loading="lazy" alt="Photo Background"></figure><figure><figcaption>文字変更と背景復元</figcaption><img src="../examples/text-edit/demo-edited.png" loading="lazy" alt="Summer Workshop"></figure></div></details>
+      <p class="edit-demo-note">検証用の合成スライド・開発ビルドの処理結果です。アプリの画面キャプチャではなく、青い枠は実測したOCR座標を示す案内です。文字色は白を明示的に指定しています。複雑な模様は復元部分がぼやける場合があります。</p></div>
+    </section>
+
     <footer>
         <div class="container">
             <div class="footer-content">

@@ -956,3 +956,29 @@ footer {
         font-size: 0.8rem;
     }
 }
+
+/* Actual OCR and text replacement outputs; shared across localized pages. */
+.edit-demo { padding: 80px 0; scroll-margin-top: 90px; }
+.edit-demo-eyebrow { color: var(--secondary); font-size: .85rem; letter-spacing: .08em; }
+.edit-demo-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.edit-demo-card { overflow: hidden; border: 1px solid var(--glass-border); border-radius: 18px; background: var(--glass-bg); }
+.edit-demo-card figcaption { padding: 22px; min-height: 180px; }
+.edit-demo-step { color: var(--secondary); font-size: .8rem; }
+.edit-demo-card h3 { margin: 8px 0; font-size: 1.15rem; }
+.edit-demo-card p, .edit-demo-note { color: var(--text-muted); font-size: .9rem; }
+.edit-demo-image { display: block; position: relative; }
+.edit-demo-image img { display: block; width: 100%; height: auto; }
+.edit-demo-box { position: absolute; border: 2px solid #086cf0; box-shadow: 0 0 0 1px white; background: #086cf019; }
+.edit-demo-image:focus-visible, .edit-demo-detail summary:focus-visible { outline: 3px solid var(--secondary); outline-offset: 4px; }
+.edit-demo-note { margin-top: 24px; max-width: 900px; line-height: 1.8; }
+.edit-demo-detail { margin-top: 24px; border: 1px solid var(--glass-border); border-radius: 12px; padding: 18px; }
+.edit-demo-detail summary { cursor: pointer; }
+.edit-demo-closeups { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 18px; }
+.edit-demo-closeups figcaption { margin-bottom: 8px; }
+.edit-demo-closeups img { display: block; width: 100%; aspect-ratio: 3 / 1; object-fit: cover; object-position: center 44%; border-radius: 8px; }
+@media (max-width: 760px) {
+ .edit-demo { padding: 48px 0; }
+ .edit-demo-grid, .edit-demo-closeups { grid-template-columns: 1fr; }
+ .edit-demo-card figcaption { min-height: 0; }
+ .edit-demo-image { max-height: none; }
+}

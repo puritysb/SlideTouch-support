@@ -176,6 +176,14 @@
     </section>
 
     <!-- System Requirements -->
+
+    <section class="edit-demo" id="text-edit-example" aria-labelledby="edit-demo-title">
+      <div class="container"><div class="section-header"><span class="edit-demo-eyebrow">Actual processing example</span><h2 id="edit-demo-title">A new sentence. On the same slide.</h2><p>Follow a slide with existing text through OCR detection, background restoration and replacement text rendering.</p></div>
+      <div class="edit-demo-grid"><figure class="edit-demo-card"><figcaption><span class="edit-demo-step">01</span><h3>Original slide</h3><p>Photo Background is part of the original image.</p></figcaption><a class="edit-demo-image" href="examples/text-edit/demo-original.png" aria-label="Original slide — View full size"><img src="examples/text-edit/demo-original.png" width="1224" height="1584" loading="lazy" alt="Original slide: Photo Background"></a></figure><figure class="edit-demo-card"><figcaption><span class="edit-demo-step">02</span><h3>Select the OCR region</h3><p>The blue outline shows measured OCR bounds. Select the recognized text to edit it.</p></figcaption><a class="edit-demo-image" href="examples/text-edit/demo-original.png" aria-label="Select the OCR region — View full size"><img src="examples/text-edit/demo-original.png" width="1224" height="1584" loading="lazy" alt="Select the OCR region: Photo Background"><span class="edit-demo-box" style="left:10.15038%;top:42.86616%;width:63.72181%;height:5.55556%" aria-hidden="true"></span></a></figure><figure class="edit-demo-card"><figcaption><span class="edit-demo-step">03</span><h3>Replace + restore</h3><p>The actual result after replacing the text with Summer Workshop.</p></figcaption><a class="edit-demo-image" href="examples/text-edit/demo-edited.png" aria-label="Replace + restore — View full size"><img src="examples/text-edit/demo-edited.png" width="1224" height="1584" loading="lazy" alt="Replace + restore: Summer Workshop"></a></figure></div>
+      <details class="edit-demo-detail"><summary>Inspect the restored background</summary><div class="edit-demo-closeups"><figure><figcaption>Original slide</figcaption><img src="examples/text-edit/demo-original.png" loading="lazy" alt="Photo Background"></figure><figure><figcaption>Replace + restore</figcaption><img src="examples/text-edit/demo-edited.png" loading="lazy" alt="Summer Workshop"></figure></div></details>
+      <p class="edit-demo-note">Synthetic test slide · processed with a development build. These are pipeline outputs, not app screenshots; the blue outline illustrates measured OCR bounds. White text was explicitly selected. Detailed patterns may look softer in the restored area.</p></div>
+    </section>
+
     <section class="system-req">
         <div class="container">
             <div class="section-header">

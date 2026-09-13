@@ -1,0 +1,19 @@
+{
+  "captureType" : "app pipeline output, not UI screenshot",
+  "font" : "Helvetica-Bold",
+  "fontSize" : 88,
+  "height" : 1584,
+  "ocrBounds" : {
+    "height" : 87.999999999999858,
+    "width" : 779.95489501953114,
+    "x" : 124.24060193609898,
+    "y" : 678.99999932619789
+  },
+  "originalText" : "Photo Background",
+  "outputOCR" : [
+    "Summer Workshop"
+  ],
+  "replacementText" : "Summer Workshop",
+  "textColor" : "explicit white",
+  "width" : 1224
+}
