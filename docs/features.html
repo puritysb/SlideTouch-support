@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SlideTouch - Features</title>
-    <meta name="description" content="Explore SlideTouch features: on-device OCR, background restoration, object selection, non-destructive editing, rich text, and multi-format export.">
+    <meta name="description" content="Fix a date, replace a heading, or update a slide without rebuilding the presentation. Document processing stays on your Mac. Editing and export are free.">
 
     <link rel="canonical" href="https://puritysb.github.io/SlideTouch-support/features.html">
     <link rel="alternate" hreflang="en" href="https://puritysb.github.io/SlideTouch-support/features.html">
@@ -18,11 +18,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+KR:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="site.css">
 </head>
-
 <body class="site-theme">
-
-
-    <nav class="navbar">
+<nav class="navbar">
         <div class="container">
             <a href="/SlideTouch-support/" class="logo">SlideTouch</a>
             <div class="nav-links">
@@ -45,101 +42,10 @@
             </div>
         </div>
     </nav>
-
-    <section class="features-detail">
-        <div class="container">
-            <div class="section-header">
-                <h1>Features</h1>
-                <p>Everything runs on your Mac. No cloud. No subscription. No extra cost.</p>
-            </div>
-
-            <!-- Feature 1: OCR -->
-            <div class="feature-detail-item">
-                <div class="feature-detail-text">
-                    <span class="feature-number">01</span>
-                    <h2>On-Device Text Detection</h2>
-                    <p>Apple Vision detects text in image-based slides on your Mac. Select the relevant OCR region to edit. Recognition depends on language, image resolution, and text style.</p>
-                </div>
-                <div class="feature-detail-visual">
-                    <img src="screenshots/feature-edit-en.jpg" alt="On-device OCR text detection with bounding boxes" loading="lazy">
-                </div>
-            </div>
-
-            <!-- Feature 2: Background Restoration -->
-            <div class="feature-detail-item">
-                <div class="feature-detail-text">
-                    <span class="feature-number">02</span>
-                    <h2>Text Replacement & Restoration</h2>
-                    <p>Replace text and inspect the restored background. In version 1.2, Compare & Refine lets you adjust the restoration area and review texture-preserving corrections before applying them. Results vary by image.</p>
-                </div>
-                <div class="feature-detail-visual">
-                    <img src="screenshots/feature-layers-en.jpg" alt="Inline text replacement with background restoration" loading="lazy">
-                </div>
-            </div>
-
-            <!-- Feature 3: Rich Text -->
-            <div class="feature-detail-item">
-                <div class="feature-detail-text">
-                    <span class="feature-number">03</span>
-                    <h2>Rich Text & Shapes</h2>
-                    <p>Full control over typography: choose fonts, adjust sizes, set colors, and align text. Apply different styles to individual text runs. Add annotations with rectangles, ellipses, arrows, and freeform curves.</p>
-                </div>
-                <div class="feature-detail-visual">
-                    <img src="screenshots/feature-richtext-en.jpg" alt="Rich text editing with typography controls" loading="lazy">
-                </div>
-            </div>
-
-            <!-- Feature 4: Object Selection -->
-            <div class="feature-detail-item">
-                <div class="feature-detail-text">
-                    <span class="feature-number">04</span>
-                    <h2>Object Selection & Move</h2>
-                    <p>Select an object with on-device segmentation, then move or remove it. Inspect the filled background; detailed patterns may need further adjustment.</p>
-                </div>
-                <div class="feature-detail-visual">
-                    <img src="screenshots/feature-select-en.jpg" alt="Object selection with precise segmentation mask" loading="lazy">
-                </div>
-            </div>
-
-            <!-- Feature 5: Non-Destructive -->
-            <div class="feature-detail-item">
-                <div class="feature-detail-text">
-                    <span class="feature-number">05</span>
-                    <h2>Non-Destructive Editing</h2>
-                    <p>Every edit in SlideTouch is a layer on top of the original image. Nothing is permanently changed until you export. Toggle, reorder, or delete any edit layer at any time, with full undo/redo support. Browse all pages in the sidebar.</p>
-                </div>
-                <div class="feature-detail-visual">
-                    <img src="screenshots/feature-edit-en.jpg" alt="Non-destructive layer editing with page sidebar" loading="lazy">
-                </div>
-            </div>
-
-            <!-- Feature 6: Export -->
-            <div class="feature-detail-item">
-                <div class="feature-detail-text">
-                    <span class="feature-number">06</span>
-                    <h2>Multi-Format Export</h2>
-                    <p>Export your edited slides as a new PDF document, individual PNG/JPEG images, a video slideshow, or an animated GIF. The original file is never modified.</p>
-                </div>
-                <div class="feature-detail-visual">
-                    <div class="export-grid">
-                        <img src="screenshots/feature-export-1-en.jpg" alt="Export as PDF dialog" loading="lazy">
-                        <img src="screenshots/feature-export-2-en.jpg" alt="Export as Images dialog" loading="lazy">
-                        <img src="screenshots/feature-export-3-en.jpg" alt="Export as Video dialog" loading="lazy">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="edit-demo" id="text-edit-example" aria-labelledby="edit-demo-title">
-      <div class="container"><div class="section-header"><span class="edit-demo-eyebrow">Actual processing example</span><h2 id="edit-demo-title">A new sentence. On the same slide.</h2><p>Follow a slide with existing text through OCR detection, background restoration and replacement text rendering.</p></div>
-      <div class="edit-demo-grid"><figure class="edit-demo-card"><figcaption><span class="edit-demo-step">01</span><h3>Original slide</h3><p>Photo Background is part of the original image.</p></figcaption><a class="edit-demo-image" href="examples/text-edit/demo-original.png" aria-label="Original slide — View full size"><img src="examples/text-edit/demo-original.png" width="1224" height="1584" loading="lazy" alt="Original slide: Photo Background"></a></figure><figure class="edit-demo-card"><figcaption><span class="edit-demo-step">02</span><h3>Select the OCR region</h3><p>The blue outline shows measured OCR bounds. Select the recognized text to edit it.</p></figcaption><a class="edit-demo-image" href="examples/text-edit/demo-original.png" aria-label="Select the OCR region — View full size"><img src="examples/text-edit/demo-original.png" width="1224" height="1584" loading="lazy" alt="Select the OCR region: Photo Background"><span class="edit-demo-box" style="left:10.15038%;top:42.86616%;width:63.72181%;height:5.55556%" aria-hidden="true"></span></a></figure><figure class="edit-demo-card"><figcaption><span class="edit-demo-step">03</span><h3>Replace + restore</h3><p>The actual result after replacing the text with Summer Workshop.</p></figcaption><a class="edit-demo-image" href="examples/text-edit/demo-edited.png" aria-label="Replace + restore — View full size"><img src="examples/text-edit/demo-edited.png" width="1224" height="1584" loading="lazy" alt="Replace + restore: Summer Workshop"></a></figure></div>
-      <details class="edit-demo-detail"><summary>Inspect the restored background</summary><div class="edit-demo-closeups"><figure><figcaption>Original slide</figcaption><img src="examples/text-edit/demo-original.png" loading="lazy" alt="Photo Background"></figure><figure><figcaption>Replace + restore</figcaption><img src="examples/text-edit/demo-edited.png" loading="lazy" alt="Summer Workshop"></figure></div></details>
-      <p class="edit-demo-note">Synthetic test slide · processed with a development build. These are pipeline outputs, not app screenshots; the blue outline illustrates measured OCR bounds. White text was explicitly selected. Detailed patterns may look softer in the restored area.</p></div>
-    </section>
-
-    <footer>
+<main>
+<section class="features-detail"><div class="container"><div class="section-header"><h1>Features</h1><p>Fix a date, replace a heading, or update a slide without rebuilding the presentation. Document processing stays on your Mac. Editing and export are free.</p></div><aside class="release-note"><strong>Status checked September 13, 2026</strong><p>Version 1.1.0 is released. Version 1.2.0 was submitted on September 13, 2026 and is awaiting App Review. The 1.2 demos show the submitted version; those changes become available after release.</p><a href="releases.html">See version details →</a></aside><article class="feature-detail-item"><div class="feature-detail-text"><span class="feature-number">01</span><h2>Select the text you need</h2><p>Open a PDF or image, choose Edit Text, then double-click a detected OCR region. Choose recognition languages in Settings. Small text, decorative fonts and low-resolution images may need manual adjustment.</p></div><figure><a class="feature-detail-visual" href="media/1.2/en-poster.jpg"><img src="media/1.2/en-poster.jpg" alt="Select the text you need" loading="lazy"></a><figcaption class="fineprint">Actual app capture · 1.2 review build</figcaption></figure></article><article class="feature-detail-item"><div class="feature-detail-text"><span class="feature-number">02</span><h2>Replace text and review the background</h2><p>In 1.2, Compare &amp; Refine offers larger previews, adjustable restoration bounds and texture-preserving corrections. Generate a preview, compare the result and explicitly apply the correction. Hidden details cannot be recovered exactly.</p></div><figure><a class="feature-detail-visual" href="media/1.2/en-app-compare.jpg"><img src="media/1.2/en-app-compare.jpg" alt="Replace text and review the background" loading="lazy"></a><figcaption class="fineprint">Actual app capture · 1.2 review build</figcaption></figure></article><article class="feature-detail-item"><div class="feature-detail-text"><span class="feature-number">03</span><h2>Style text and add shapes</h2><p>Choose fonts, size, color and alignment. Style selected text and add rectangles, ellipses, arrows or curves. Version 1.2 also lets you adjust letter spacing; the original font is not automatically recovered.</p></div><figure><a class="feature-detail-visual" href="screenshots/feature-richtext-en.jpg"><img src="screenshots/feature-richtext-en.jpg" alt="Style text and add shapes" loading="lazy"></a><figcaption class="fineprint">Screenshot from an earlier version; the 1.2 toolbar and labels differ.</figcaption></figure></article><article class="feature-detail-item"><div class="feature-detail-text"><span class="feature-number">04</span><h2>Move or remove an object</h2><p>Select an object with on-device segmentation, then move or remove it. Inspect the filled source area, especially on detailed photos and repeated patterns.</p></div><figure><a class="feature-detail-visual" href="screenshots/feature-select-en.jpg"><img src="screenshots/feature-select-en.jpg" alt="Move or remove an object" loading="lazy"></a><figcaption class="fineprint">Screenshot from an earlier version; the 1.2 toolbar and labels differ.</figcaption></figure></article><article class="feature-detail-item"><div class="feature-detail-text"><span class="feature-number">05</span><h2>Keep your original</h2><p>Edits are separate layers. Toggle or remove layers and use undo/redo while working. Export creates a new file. Version 1.2 improves OCR undo/redo and warns before closing a document with unexported edits.</p></div><figure><a class="feature-detail-visual" href="screenshots/feature-edit-en.jpg"><img src="screenshots/feature-edit-en.jpg" alt="Keep your original" loading="lazy"></a><figcaption class="fineprint">Screenshot from an earlier version; the 1.2 toolbar and labels differ.</figcaption></figure></article><article class="feature-detail-item"><div class="feature-detail-text"><span class="feature-number">06</span><h2>Export for your next step</h2><p>Save an edited PDF, PNG/JPEG images, MP4 slideshow or animated GIF. In 1.2, use File &gt; Export PDF or Command-Shift-E. Finish the current text edit before exporting.</p></div><figure><a class="feature-detail-visual" href="screenshots/feature-export-1-en.jpg"><img src="screenshots/feature-export-1-en.jpg" alt="Export for your next step" loading="lazy"></a><figcaption class="fineprint">Screenshot from an earlier version; the 1.2 toolbar and labels differ.</figcaption></figure></article></div></section><section class="proof-section" id="text-edit-example"><div class="container"><h2>Photo backgrounds, real editing results</h2><p>Compare the input with the actual edited output on a textured photo background.</p><div class="content-proof"><figure><a href="media/1.2/en-input.jpg"><img src="media/1.2/en-input.jpg" alt="Original image" width="1440" height="810" loading="lazy"></a><figcaption>Original image</figcaption></figure><figure><a href="media/1.2/en-edited.jpg"><img src="media/1.2/en-edited.jpg" alt="Edited output" width="1440" height="810" loading="lazy"></a><figcaption>Edited output</figcaption></figure></div><p class="fineprint">Generated sample image processed by the actual on-device engine. These are slide outputs, not app screenshots. Background quality varies; inspect the result before exporting.</p><p><a href="index.html#demo">Watch the 1.2 workflow in five languages →</a></p></div></section>
+</main>
+<footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">SlideTouch</div>
@@ -153,8 +59,6 @@
             </div>
         </div>
     </footer>
-
-    <script src="lang-switcher.js"></script>
+<script src="lang-switcher.js"></script>
 </body>
-
 </html>

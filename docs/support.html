@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SlideTouch - Support</title>
-    <meta name="description" content="SlideTouch support, FAQ, and bug reporting guide.">
+    <meta name="description" content="Report a bug on GitHub or contact the developer by email. Include your app version, macOS version, Mac chip, steps to reproduce, and export format. Remove private information from screenshots and sample files. GitHub issues are public.">
 
     <link rel="canonical" href="https://puritysb.github.io/SlideTouch-support/support.html">
     <link rel="alternate" hreflang="en" href="https://puritysb.github.io/SlideTouch-support/support.html">
@@ -18,11 +18,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+KR:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="site.css">
 </head>
-
 <body class="site-theme">
-
-
-    <nav class="navbar">
+<nav class="navbar">
         <div class="container">
             <a href="/SlideTouch-support/" class="logo">SlideTouch</a>
             <div class="nav-links">
@@ -45,74 +42,10 @@
             </div>
         </div>
     </nav>
-
-    <section class="page">
-        <div class="container">
-            <div class="page-card">
-                <h1>Support</h1>
-                <p>If you're experiencing issues with SlideTouch, please check below.</p>
-
-                <h2>System Requirements</h2>
-                <ul>
-                    <li><strong>macOS 15.1+</strong> (Sequoia or later)</li>
-                    <li><strong>Apple Silicon</strong> (M1, M2, M3, M4) — Intel Macs are not supported</li>
-                    <li><strong>8GB+ RAM</strong> recommended</li>
-                </ul>
-
-                <h2>Frequently Asked Questions</h2>
-                <div class="faq-list">
-                    <details class="faq-item">
-                        <summary>Why does SlideTouch require Apple Silicon?</summary>
-                        <p>SlideTouch is built for Apple Silicon Macs. Its bundled image-processing models run locally using Core ML. Intel Macs are not supported.</p>
-                    </details>
-                    <details class="faq-item">
-                        <summary>Can I edit regular (text-based) PDFs?</summary>
-                        <p>SlideTouch is designed specifically for image-based PDFs where text exists as pixels, not as editable text objects. For text-based PDFs, standard PDF editors are more appropriate.</p>
-                    </details>
-                    <details class="faq-item">
-                        <summary>Will my original PDF be modified?</summary>
-                        <p>Never. SlideTouch follows a strict non-destructive editing principle. All edits are stored as overlay layers. When you export, a new file is created, leaving the original untouched.</p>
-                    </details>
-                    <details class="faq-item">
-                        <summary>What languages does OCR support?</summary>
-                        <p>Choose OCR languages in Settings, including English, Korean, Japanese, and Simplified or Traditional Chinese. Available recognition languages depend on Apple Vision and the operating system.</p>
-                    </details>
-                    <details class="faq-item">
-                        <summary>Is an internet connection required?</summary>
-                        <p>Document OCR and image processing work offline. App downloads, updates, optional Apple purchases, and external support links use the internet.</p>
-                    </details>
-                    <details class="faq-item">
-                        <summary>Inpainting looks blurry or has artifacts</summary>
-                        <p>Try using a smaller edit region. The inpainting model works best on small to medium patches. For very large areas, you may need to edit in multiple smaller steps.</p>
-                    </details>
-                    <details class="faq-item">
-                        <summary>The app is using a lot of memory</summary>
-                        <p>SlideTouch loads ML models on demand and unloads them after 30 seconds of inactivity. For very large PDFs (100+ pages), closing pages you're not actively editing will reduce memory usage.</p>
-                    </details>
-                </div>
-
-                <h2>Report a Bug</h2>
-                <p>The easiest way to report bugs is through GitHub Issues.</p>
-                <ul>
-                    <li>Issues: <a href="https://github.com/puritysb/SlideTouch-support/issues" target="_blank" rel="noopener noreferrer">github.com/puritysb/SlideTouch-support/issues</a></li>
-                </ul>
-
-                <h2>What to Include in Bug Reports</h2>
-                <ul>
-                    <li>App version (SlideTouch &gt; About SlideTouch)</li>
-                    <li>macOS version and chip model (e.g., macOS 15.2, M2 Pro)</li>
-                    <li>Which feature was being used (OCR, inpainting, export, etc.)</li>
-                    <li>Steps to reproduce the issue</li>
-                    <li>Screenshots if possible</li>
-                </ul>
-
-                <h2>Privacy</h2>
-                <p>Document processing stays on your Mac. Optional purchases use Apple services. See our <a href="privacy.html">Privacy Policy</a>.</p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
+<main>
+<section class="page"><div class="container"><div class="page-card"><h1>Support</h1><aside class="release-note"><strong>Status checked September 13, 2026</strong><p>Version 1.1.0 is released. Version 1.2.0 was submitted on September 13, 2026 and is awaiting App Review. The 1.2 demos show the submitted version; those changes become available after release.</p><a href="releases.html">See version details →</a></aside><h2>System requirements</h2><ul><li>macOS 15.1 or later</li><li>Apple Silicon Mac (M1 or later); Intel Macs are not supported</li><li>8 GB RAM or more recommended</li></ul><h2>Common questions</h2><div class="faq-list"><details class="faq-item"><summary>How do I start editing?</summary><p>Open a PDF or image, choose Edit Text and double-click an OCR box. Replace the text, then finalize the edit. In 1.2, use Compare &amp; Refine to review the background before exporting a new file.</p></details><details class="faq-item"><summary>OCR missed a word or punctuation. What can I do?</summary><p>Check the recognition languages in Settings and use a higher-resolution source if available. In 1.2, expand the restoration area if fragments remain outside the selected text. Small punctuation and stylized text may still need manual correction.</p></details><details class="faq-item"><summary>The restored background looks blurry.</summary><p>Use a smaller restoration region when possible. In 1.2, compare a texture-preserving correction in Compare &amp; Refine before applying it. Undo an unsatisfactory edit. Photos and repeated patterns do not always restore cleanly.</p></details><details class="faq-item"><summary>Can I edit a regular text-based PDF?</summary><p>SlideTouch is designed for slides where text has been flattened into pixels. It creates replacement layers, rather than editing the original PDF text objects.</p></details><details class="faq-item"><summary>Is my original file safe?</summary><p>Edits are kept in layers and export creates a new file. Keep the source file and export your work before closing. In 1.2, a close warning helps protect unexported edits; it is not a promise of crash recovery.</p></details><details class="faq-item"><summary>Which languages are supported?</summary><p>The 1.1 interface supports English, Korean and Japanese. Version 1.2 adds Simplified and Traditional Chinese. OCR language choices are separate from the interface language and depend on Apple Vision and macOS.</p></details><details class="faq-item"><summary>Does the app need the internet?</summary><p>Document OCR and image processing run locally. Downloads, updates, optional Apple purchases and external support links use the internet.</p></details><details class="faq-item"><summary>Why is memory use high?</summary><p>Image-processing models load on demand and unload when idle. Large pages and high-resolution images can use more memory. Export your work before closing a large document; there is no command to close individual pages.</p></details><details class="faq-item"><summary>Do I need to pay or leave a rating?</summary><p>No. Editing and export are free. In 1.2, Help or Settings offers a voluntary developer tip with an Apple price shown before purchase. Each purchase is a separate one-time charge. It is not a subscription and unlocks nothing. Ratings are optional and independent of tips.</p></details><details class="faq-item"><summary>A tip is pending or unavailable.</summary><p>You can keep editing for free. Check the purchase status in your Apple account before trying again; another purchase may create a separate charge. For an Apple billing issue, contact Apple Support.</p></details></div><h2>Get help</h2><p>Report a bug on GitHub or contact the developer by email. Include your app version, macOS version, Mac chip, steps to reproduce, and export format. Remove private information from screenshots and sample files. GitHub issues are public.</p><p><a href="https://github.com/puritysb/SlideTouch-support/issues">GitHub Issues ↗</a> · <a href="mailto:puritysb@gmail.com">puritysb@gmail.com</a></p><p>Document processing stays on your Mac. Optional purchases use Apple services.</p><p><a href="privacy.html">Privacy policy</a></p></div></div></section>
+</main>
+<footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">SlideTouch</div>
@@ -126,8 +59,6 @@
             </div>
         </div>
     </footer>
-
-    <script src="lang-switcher.js"></script>
+<script src="lang-switcher.js"></script>
 </body>
-
 </html>

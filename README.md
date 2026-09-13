@@ -20,7 +20,7 @@
 
 ## About SlideTouch
 
-Slides from NotebookLM, Canva, and similar tools are beautiful but entirely flattened images. Fixing a single typo requires regenerating the whole deck.
+When a presentation is exported as flattened image-based slides, the text is no longer directly editable. SlideTouch helps you correct a date or phrase without rebuilding the whole slide.
 
 SlideTouch solves this with on-device OCR + AI inpainting + text rendering:
 
@@ -59,3 +59,13 @@ Support materials in this repository are licensed under the [MIT License](LICENS
 Run `python3 scripts/refresh_home.py` to rebuild EN/KO/JA homepages. These retain the existing page head, navigation and footer. The script owns landing page copy; `docs/site.css` and `docs/landing.js` own layout and interactions. See `docs/media/1.2/README.md` for media provenance. The 1.2 demo is labeled as submitted for review until release is confirmed.
 
 All 15 EN/KO/JA pages use the same `site-theme` shell and `docs/site.css`. Subpage navigation marks the current page with `aria-current`. Check home → features → releases → support → privacy on desktop and mobile when changing shared styles.
+
+## Content updates and release checks
+
+- `scripts/site_content.json` owns EN/KO/JA release status, release notes, feature descriptions and support FAQ. Homepages use the same release status.
+- Run `python3 scripts/refresh_content.py`, then `python3 scripts/refresh_home.py`, then `python3 scripts/check_content.py` and `git diff --check`.
+- Verify the released and pending versions in App Store Connect before changing status. An uploaded build is not a released app. On approval, update the status/date in all three locale entries and remove obsolete preview wording where appropriate.
+- Reconcile release notes with the app repository's `AppStore/metadata/*/whats-new-1.1.0.txt`, `AppStore/FinalUI-2026-09/*/metadata/whats-new.txt`, and current code. Latest requirements come from `SlideTouch.xcodeproj/project.pbxproj`.
+- Privacy body remains in each `docs/*/privacy.html`; its search description and support-sharing paragraph are managed by the content generator. Check both visible copy and metadata.
+- On 2026-09-13, ASC showed 1.1.0 released and 1.2.0 awaiting review. The site now includes both histories, clearly labels 1.2 previews, uses actual photo-background output, and marks older screenshots as such. No unsupported speed multiplier, exact restoration, fixed model-unload time or individual-page close instruction is used.
+- Before publishing, inspect desktop and mobile pages, expand support FAQs, follow demo/release links, and verify public HTML/CSS against the committed output after Pages finishes.

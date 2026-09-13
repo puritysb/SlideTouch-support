@@ -31,3 +31,12 @@
 .site-theme .edit-demo-detail{background:#faf9f5}
 .site-theme footer{border-top:1px solid var(--glass-border)}
 @media(max-width:800px){.site-theme .features-detail,.site-theme .releases,.site-theme .page{padding:42px 0 54px}.site-theme .feature-detail-item{grid-template-columns:1fr;gap:24px;padding:32px 0}.site-theme .release-entry{padding:24px}.site-theme .navbar .container{padding-top:18px;padding-bottom:18px}.site-theme .section-header{margin-bottom:30px}.site-theme .page h2{font-size:23px}.site-theme .feature-detail-text h2{font-size:26px}}
+.site-theme .release-entry h2.release-version{font-size:20px;letter-spacing:-.02em;line-height:1.4;margin:0;padding:8px 12px}
+.site-theme .release-note p{margin:10px 0;font-size:14px;line-height:1.8}
+.site-theme .features-detail .release-note{margin-bottom:42px}
+.site-theme .content-proof{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:28px 0}
+.site-theme .content-proof img{width:100%;height:auto;display:block;border-radius:10px}
+.site-theme .content-proof figcaption{padding:10px 0;font-size:14px}
+.site-theme .feature-detail-item figure{min-width:0;margin:0}
+@media(max-width:800px){.site-theme .content-proof{grid-template-columns:1fr}}
+.site-theme .releases .container>p{max-width:900px;line-height:1.8;color:var(--text-muted);margin-bottom:24px}

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SlideTouch - サポート</title>
-    <meta name="description" content="SlideTouchサポート、FAQ、バグ報告ガイド。">
+    <meta name="description" content="GitHubで不具合を報告するか、開発者にメールしてください。アプリとmacOSのバージョン、Macのチップ、再現手順、書き出し形式をお知らせください。画像やサンプルから個人情報を削除してください。GitHubのIssueは公開されます。">
 
     <link rel="canonical" href="https://puritysb.github.io/SlideTouch-support/ja/support.html">
     <link rel="alternate" hreflang="en" href="https://puritysb.github.io/SlideTouch-support/support.html">
@@ -18,11 +18,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../site.css">
 </head>
-
 <body class="site-theme">
-
-
-    <nav class="navbar">
+<nav class="navbar">
         <div class="container">
             <a href="/SlideTouch-support/ja/" class="logo">SlideTouch</a>
             <div class="nav-links">
@@ -45,74 +42,10 @@
             </div>
         </div>
     </nav>
-
-    <section class="page">
-        <div class="container">
-            <div class="page-card">
-                <h1>サポート</h1>
-                <p>SlideTouchの使用中に問題がある場合は、以下をご確認ください。</p>
-
-                <h2>システム要件</h2>
-                <ul>
-                    <li><strong>macOS 15.1+</strong>（Sequoia以降）</li>
-                    <li><strong>Apple Silicon</strong>（M1、M2、M3、M4）— Intel Macは非対応</li>
-                    <li><strong>8GB+ RAM</strong> 推奨</li>
-                </ul>
-
-                <h2>よくある質問</h2>
-                <div class="faq-list">
-                    <details class="faq-item">
-                        <summary>なぜApple Siliconが必要ですか？</summary>
-                        <p>SlideTouchはApple Silicon Mac向けにビルドされています。内蔵の画像処理モデルはCore MLでローカルに実行します。Intel Macには対応していません。</p>
-                    </details>
-                    <details class="faq-item">
-                        <summary>通常の（テキストベースの）PDFも編集できますか？</summary>
-                        <p>SlideTouchは、テキストが編集可能なオブジェクトではなくピクセルとして存在する画像ベースのPDF向けに設計されています。テキストベースのPDFには、標準的なPDFエディタがより適しています。</p>
-                    </details>
-                    <details class="faq-item">
-                        <summary>元のPDFは変更されますか？</summary>
-                        <p>決して変更されません。SlideTouchは厳格な非破壊編集の原則に従います。すべての編集はオーバーレイレイヤーとして保存されます。書き出し時に新しいファイルが作成され、元のファイルはそのまま維持されます。</p>
-                    </details>
-                    <details class="faq-item">
-                        <summary>OCRはどの言語に対応していますか？</summary>
-                        <p>設定で英語、韓国語、日本語、中国語の簡体字・繁体字などのOCR言語を選べます。認識できる言語はApple VisionとOSによって異なります。</p>
-                    </details>
-                    <details class="faq-item">
-                        <summary>インターネット接続は必要ですか？</summary>
-                        <p>書類のOCRと画像処理はオフラインで動作します。アプリのダウンロードや更新、任意のApple決済、外部サポートリンクにはインターネットを使います。</p>
-                    </details>
-                    <details class="faq-item">
-                        <summary>インペインティングの結果がぼやけたりアーティファクトがあります</summary>
-                        <p>より小さな編集領域を使用してみてください。インペインティングモデルは小〜中サイズのパッチで最も効果的に動作します。非常に大きな領域は、複数の小さなステップに分けて編集することをお勧めします。</p>
-                    </details>
-                    <details class="faq-item">
-                        <summary>アプリのメモリ使用量が多いです</summary>
-                        <p>SlideTouchはMLモデルを必要に応じてロードし、30秒間使用しないとアンロードします。非常に大きなPDF（100ページ以上）の場合、積極的に編集していないページを閉じるとメモリ使用量が減少します。</p>
-                    </details>
-                </div>
-
-                <h2>バグ報告</h2>
-                <p>バグを報告する最も簡単な方法はGitHub Issuesです。</p>
-                <ul>
-                    <li>Issues: <a href="https://github.com/puritysb/SlideTouch-support/issues" target="_blank" rel="noopener noreferrer">github.com/puritysb/SlideTouch-support/issues</a></li>
-                </ul>
-
-                <h2>バグ報告に含める内容</h2>
-                <ul>
-                    <li>アプリのバージョン（SlideTouch &gt; SlideTouchについて）</li>
-                    <li>macOSバージョンとチップモデル（例：macOS 15.2、M2 Pro）</li>
-                    <li>使用していた機能（OCR、インペインティング、書き出しなど）</li>
-                    <li>問題の再現手順</li>
-                    <li>可能であればスクリーンショット</li>
-                </ul>
-
-                <h2>プライバシー</h2>
-                <p>書類の処理はMac上で行います。任意の購入にはAppleのサービスを使います。詳しくは<a href="privacy.html">プライバシーポリシー</a>をご覧ください。</p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
+<main>
+<section class="page"><div class="container"><div class="page-card"><h1>サポート</h1><aside class="release-note"><strong>2026年9月13日 状態確認</strong><p>1.1.0はリリース済みです。1.2.0は2026年9月13日に提出し、App Reviewの審査待ちです。サイトの1.2デモは提出版の画面です。これらの変更はリリース後に利用できます。</p><a href="releases.html">バージョン別の変更を見る →</a></aside><h2>システム要件</h2><ul><li>macOS 15.1以降</li><li>Apple Silicon Mac（M1以降）。Intel Macは非対応</li><li>8GB以上のメモリを推奨</li></ul><h2>よくある質問</h2><div class="faq-list"><details class="faq-item"><summary>編集はどう始めますか？</summary><p>PDFや画像を開き、テキスト編集を選んでOCR枠をダブルクリックします。文字を置き換えて編集を確定します。1.2では比較・補正で背景を確認してから、新しいファイルに書き出せます。</p></details><details class="faq-item"><summary>OCRが文字や句読点を見落としました。</summary><p>設定の認識言語を確認し、可能なら高解像度の元画像を使ってください。1.2では文字の外に跡が残る場合、復元範囲を広げられます。小さな句読点や特殊な書体は手動修正が必要な場合があります。</p></details><details class="faq-item"><summary>復元した背景がぼやけます。</summary><p>可能なら復元領域を小さくしてください。1.2では比較・補正で質感を保つ補正を生成し、確認してから適用できます。満足できなければ取り消してください。写真や繰り返し模様が必ず自然に復元されるとは限りません。</p></details><details class="faq-item"><summary>通常のテキストPDFも編集できますか？</summary><p>SlideTouchは文字がピクセルに統合されたスライド向けです。元のPDFテキストオブジェクトを変更するのではなく、置換レイヤーを作成します。</p></details><details class="faq-item"><summary>元ファイルは保持されますか？</summary><p>編集はレイヤーに保存され、書き出しは新しいファイルを作成します。元ファイルを保持し、閉じる前に作業を書き出してください。1.2の終了警告は未出力の編集を守る案内であり、クラッシュ後の自動復元を保証するものではありません。</p></details><details class="faq-item"><summary>対応言語は？</summary><p>1.1の画面は英語・韓国語・日本語に対応しています。1.2で中国語の簡体字・繁体字を追加します。OCR言語は画面の言語とは別で、Apple VisionとmacOSに依存します。</p></details><details class="faq-item"><summary>インターネットは必要ですか？</summary><p>文書のOCRと画像処理はMac内で行います。ダウンロード・更新、任意のApple決済、外部サポートリンクにはインターネットを使います。</p></details><details class="faq-item"><summary>メモリ使用量が多いです。</summary><p>画像処理モデルは必要時に読み込み、待機中に解放します。大きなページや高解像度画像はより多くのメモリを使います。大きな文書を閉じる前に作業を書き出してください。個別のページだけを閉じるコマンドはありません。</p></details><details class="faq-item"><summary>支払いや評価は必要ですか？</summary><p>いいえ。編集・書き出しは無料です。1.2ではヘルプや設定から任意で開発を応援できます。購入前にAppleの価格が表示されます。購入ごとに請求される単発のチップで、定期購入や追加機能はありません。評価も任意で、チップとは無関係です。</p></details><details class="faq-item"><summary>チップが保留中、または商品が表示されません。</summary><p>無料で編集を続けられます。再購入は別の請求になる場合があるため、先にAppleアカウントで購入状況を確認してください。Appleの請求に関する問題はAppleサポートにお問い合わせください。</p></details></div><h2>お問い合わせ</h2><p>GitHubで不具合を報告するか、開発者にメールしてください。アプリとmacOSのバージョン、Macのチップ、再現手順、書き出し形式をお知らせください。画像やサンプルから個人情報を削除してください。GitHubのIssueは公開されます。</p><p><a href="https://github.com/puritysb/SlideTouch-support/issues">GitHub Issues ↗</a> · <a href="mailto:puritysb@gmail.com">puritysb@gmail.com</a></p><p>文書はMac内で処理し、任意の購入にはAppleのサービスを使います。</p><p><a href="privacy.html">プライバシーポリシー</a></p></div></div></section>
+</main>
+<footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">SlideTouch</div>
@@ -126,8 +59,6 @@
             </div>
         </div>
     </footer>
-
-    <script src="../lang-switcher.js"></script>
+<script src="../lang-switcher.js"></script>
 </body>
-
 </html>
