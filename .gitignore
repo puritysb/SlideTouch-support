@@ -1,0 +1,3 @@
+# Local macOS metadata and optional screenshot-tool dependencies.
+.DS_Store
+node_modules/
