@@ -56,4 +56,6 @@ Support materials in this repository are licensed under the [MIT License](LICENS
 
 ## Landing page updates
 
-Run `python3 scripts/refresh_home.py` to rebuild EN/KO/JA homepages. These retain the existing page head, navigation and footer. The script owns landing page copy; `docs/landing.css` and `docs/landing.js` own layout and interactions. See `docs/media/1.2/README.md` for media provenance. The 1.2 demo is labeled as submitted for review until release is confirmed.
+Run `python3 scripts/refresh_home.py` to rebuild EN/KO/JA homepages. These retain the existing page head, navigation and footer. The script owns landing page copy; `docs/site.css` and `docs/landing.js` own layout and interactions. See `docs/media/1.2/README.md` for media provenance. The 1.2 demo is labeled as submitted for review until release is confirmed.
+
+All 15 EN/KO/JA pages use the same `site-theme` shell and `docs/site.css`. Subpage navigation marks the current page with `aria-current`. Check home → features → releases → support → privacy on desktop and mobile when changing shared styles.
